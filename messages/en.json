@@ -12,7 +12,9 @@
     "nav_map": "Almaty Map",
     "contacts": "Contacts",
     "rights": "All rights reserved.",
-    "disclaimer": "All information about coworkings (prices, services, photos) presented on the platform is for informational purposes only and may be changed by space owners. Final conditions and actual pricing should be clarified directly with administrators when booking."
+    "disclaimer": "All information about coworking spaces (prices, services, photos) presented on the platform is for informational purposes and can be changed by the space owners. Please verify the final conditions and current costs directly with the administrators when booking.",
+    "for_owners_title": "For Owners",
+    "for_owners_text": "Want to add your coworking space or update information? Contact us:"
   },
   "Home": {
     "hero_title_1": "Coworkings and meeting",

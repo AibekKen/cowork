@@ -31,17 +31,41 @@
     "priceMeetingRoom": 4000,
     "whatsappNumber": "77710707187",
     "photos": [
-      "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1556761175-5973dc0f32b7?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800&q=80"
     ],
     "amenities": [
-      {"ru": "Wi-Fi 500 Мбит/с", "kk": "Wi-Fi 500 Мбит/с", "en": "Wi-Fi 500 Mbps"},
-      {"ru": "Доступ 24/7", "kk": "Тәулік бойы қолжетімділік", "en": "24/7 Access"},
-      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"},
-      {"ru": "Парковка", "kk": "Тұрақ", "en": "Parking"},
-      {"ru": "Зум-кабины", "kk": "Зум-кабиналар", "en": "Zoom booths"},
-      {"ru": "Генератор/ИБП", "kk": "Генератор/ҮҚК", "en": "Generator/UPS"}
+      {
+        "ru": "Wi-Fi 500 Мбит/с",
+        "kk": "Wi-Fi 500 Мбит/с",
+        "en": "Wi-Fi 500 Mbps"
+      },
+      {
+        "ru": "Доступ 24/7",
+        "kk": "Тәулік бойы қолжетімділік",
+        "en": "24/7 Access"
+      },
+      {
+        "ru": "Кофе-зона",
+        "kk": "Кофе-аймақ",
+        "en": "Coffee zone"
+      },
+      {
+        "ru": "Парковка",
+        "kk": "Тұрақ",
+        "en": "Parking"
+      },
+      {
+        "ru": "Зум-кабины",
+        "kk": "Зум-кабиналар",
+        "en": "Zoom booths"
+      },
+      {
+        "ru": "Генератор/ИБП",
+        "kk": "Генератор/ҮҚК",
+        "en": "Generator/UPS"
+      }
     ],
     "rating": 4.8
   },
@@ -77,15 +101,36 @@
     "priceMeetingRoom": 5000,
     "whatsappNumber": "77055353222",
     "photos": [
-      "https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80"
     ],
     "amenities": [
-      {"ru": "Wi-Fi 1 Гбит/с", "kk": "Wi-Fi 1 Гбит/с", "en": "Wi-Fi 1 Gbps"},
-      {"ru": "Доступ 24/7", "kk": "Тәулік бойы қолжетімділік", "en": "24/7 Access"},
-      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"},
-      {"ru": "Переговорная", "kk": "Келіссөз бөлмесі", "en": "Meeting room"},
-      {"ru": "Генератор/ИБП", "kk": "Генератор/ҮҚК", "en": "Generator/UPS"}
+      {
+        "ru": "Wi-Fi 1 Гбит/с",
+        "kk": "Wi-Fi 1 Гбит/с",
+        "en": "Wi-Fi 1 Gbps"
+      },
+      {
+        "ru": "Доступ 24/7",
+        "kk": "Тәулік бойы қолжетімділік",
+        "en": "24/7 Access"
+      },
+      {
+        "ru": "Кофе-зона",
+        "kk": "Кофе-аймақ",
+        "en": "Coffee zone"
+      },
+      {
+        "ru": "Переговорная",
+        "kk": "Келіссөз бөлмесі",
+        "en": "Meeting room"
+      },
+      {
+        "ru": "Генератор/ИБП",
+        "kk": "Генератор/ҮҚК",
+        "en": "Generator/UPS"
+      }
     ],
     "rating": 4.9
   },
@@ -115,20 +160,37 @@
     },
     "coordinates": {
       "lat": 43.2403,
-      "lng": 76.8920
+      "lng": 76.892
     },
     "priceFrom": 3500,
     "priceMeetingRoom": 3000,
     "whatsappNumber": "77477273030",
     "photos": [
-      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1572025442646-866d16c84a54?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=800&q=80"
     ],
     "amenities": [
-      {"ru": "Wi-Fi 300 Мбит/с", "kk": "Wi-Fi 300 Мбит/с", "en": "Wi-Fi 300 Mbps"},
-      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"},
-      {"ru": "Парковка", "kk": "Тұрақ", "en": "Parking"},
-      {"ru": "Зум-кабины", "kk": "Зум-кабиналар", "en": "Zoom booths"}
+      {
+        "ru": "Wi-Fi 300 Мбит/с",
+        "kk": "Wi-Fi 300 Мбит/с",
+        "en": "Wi-Fi 300 Mbps"
+      },
+      {
+        "ru": "Кофе-зона",
+        "kk": "Кофе-аймақ",
+        "en": "Coffee zone"
+      },
+      {
+        "ru": "Парковка",
+        "kk": "Тұрақ",
+        "en": "Parking"
+      },
+      {
+        "ru": "Зум-кабины",
+        "kk": "Зум-кабиналар",
+        "en": "Zoom booths"
+      }
     ],
     "rating": 4.5
   },
@@ -164,15 +226,36 @@
     "priceMeetingRoom": 4500,
     "whatsappNumber": "77085070057",
     "photos": [
-      "https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=800&q=80"
     ],
     "amenities": [
-      {"ru": "Wi-Fi 500 Мбит/с", "kk": "Wi-Fi 500 Мбит/с", "en": "Wi-Fi 500 Mbps"},
-      {"ru": "Доступ 24/7", "kk": "Тәулік бойы қолжетімділік", "en": "24/7 Access"},
-      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"},
-      {"ru": "Парковка", "kk": "Тұрақ", "en": "Parking"},
-      {"ru": "Переговорная", "kk": "Келіссөз бөлмесі", "en": "Meeting room"}
+      {
+        "ru": "Wi-Fi 500 Мбит/с",
+        "kk": "Wi-Fi 500 Мбит/с",
+        "en": "Wi-Fi 500 Mbps"
+      },
+      {
+        "ru": "Доступ 24/7",
+        "kk": "Тәулік бойы қолжетімділік",
+        "en": "24/7 Access"
+      },
+      {
+        "ru": "Кофе-зона",
+        "kk": "Кофе-аймақ",
+        "en": "Coffee zone"
+      },
+      {
+        "ru": "Парковка",
+        "kk": "Тұрақ",
+        "en": "Parking"
+      },
+      {
+        "ru": "Переговорная",
+        "kk": "Келіссөз бөлмесі",
+        "en": "Meeting room"
+      }
     ],
     "rating": 4.7
   },
@@ -208,13 +291,26 @@
     "priceMeetingRoom": 3500,
     "whatsappNumber": "77016906692",
     "photos": [
-      "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&w=800&q=80"
     ],
     "amenities": [
-      {"ru": "Wi-Fi 300 Мбит/с", "kk": "Wi-Fi 300 Мбит/с", "en": "Wi-Fi 300 Mbps"},
-      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"},
-      {"ru": "Парковка", "kk": "Тұрақ", "en": "Parking"}
+      {
+        "ru": "Wi-Fi 300 Мбит/с",
+        "kk": "Wi-Fi 300 Мбит/с",
+        "en": "Wi-Fi 300 Mbps"
+      },
+      {
+        "ru": "Кофе-зона",
+        "kk": "Кофе-аймақ",
+        "en": "Coffee zone"
+      },
+      {
+        "ru": "Парковка",
+        "kk": "Тұрақ",
+        "en": "Parking"
+      }
     ],
     "rating": 4.6
   },
@@ -250,15 +346,36 @@
     "priceMeetingRoom": 5500,
     "whatsappNumber": "77013007262",
     "photos": [
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
     ],
     "amenities": [
-      {"ru": "Wi-Fi 500 Мбит/с", "kk": "Wi-Fi 500 Мбит/с", "en": "Wi-Fi 500 Mbps"},
-      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"},
-      {"ru": "Переговорная", "kk": "Келіссөз бөлмесі", "en": "Meeting room"},
-      {"ru": "Доступ 24/7", "kk": "Тәулік бойы қолжетімділік", "en": "24/7 Access"},
-      {"ru": "Зум-кабины", "kk": "Зум-кабиналар", "en": "Zoom booths"}
+      {
+        "ru": "Wi-Fi 500 Мбит/с",
+        "kk": "Wi-Fi 500 Мбит/с",
+        "en": "Wi-Fi 500 Mbps"
+      },
+      {
+        "ru": "Кофе-зона",
+        "kk": "Кофе-аймақ",
+        "en": "Coffee zone"
+      },
+      {
+        "ru": "Переговорная",
+        "kk": "Келіссөз бөлмесі",
+        "en": "Meeting room"
+      },
+      {
+        "ru": "Доступ 24/7",
+        "kk": "Тәулік бойы қолжетімділік",
+        "en": "24/7 Access"
+      },
+      {
+        "ru": "Зум-кабины",
+        "kk": "Зум-кабиналар",
+        "en": "Zoom booths"
+      }
     ],
     "rating": 4.9
   },
@@ -294,15 +411,36 @@
     "priceMeetingRoom": 4000,
     "whatsappNumber": "77775041481",
     "photos": [
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800&q=80"
     ],
     "amenities": [
-      {"ru": "Wi-Fi 1 Гбит/с", "kk": "Wi-Fi 1 Гбит/с", "en": "Wi-Fi 1 Gbps"},
-      {"ru": "Доступ 24/7", "kk": "Тәулік бойы қолжетімділік", "en": "24/7 Access"},
-      {"ru": "Переговорная", "kk": "Келіссөз бөлмесі", "en": "Meeting room"},
-      {"ru": "Охрана", "kk": "Күзет", "en": "Security"},
-      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"}
+      {
+        "ru": "Wi-Fi 1 Гбит/с",
+        "kk": "Wi-Fi 1 Гбит/с",
+        "en": "Wi-Fi 1 Gbps"
+      },
+      {
+        "ru": "Доступ 24/7",
+        "kk": "Тәулік бойы қолжетімділік",
+        "en": "24/7 Access"
+      },
+      {
+        "ru": "Переговорная",
+        "kk": "Келіссөз бөлмесі",
+        "en": "Meeting room"
+      },
+      {
+        "ru": "Охрана",
+        "kk": "Күзет",
+        "en": "Security"
+      },
+      {
+        "ru": "Кофе-зона",
+        "kk": "Кофе-аймақ",
+        "en": "Coffee zone"
+      }
     ],
     "rating": 4.7
   },
@@ -332,19 +470,32 @@
     },
     "coordinates": {
       "lat": 43.2405,
-      "lng": 76.9320
+      "lng": 76.932
     },
     "priceFrom": 4500,
     "priceMeetingRoom": 3500,
     "whatsappNumber": "77083590869",
     "photos": [
-      "https://images.unsplash.com/photo-1556761175-5973dc0f32b7?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80"
     ],
     "amenities": [
-      {"ru": "Wi-Fi 300 Мбит/с", "kk": "Wi-Fi 300 Мбит/с", "en": "Wi-Fi 300 Mbps"},
-      {"ru": "Доступ 24/7", "kk": "Тәулік бойы қолжетімділік", "en": "24/7 Access"},
-      {"ru": "Парковка", "kk": "Тұрақ", "en": "Parking"}
+      {
+        "ru": "Wi-Fi 300 Мбит/с",
+        "kk": "Wi-Fi 300 Мбит/с",
+        "en": "Wi-Fi 300 Mbps"
+      },
+      {
+        "ru": "Доступ 24/7",
+        "kk": "Тәулік бойы қолжетімділік",
+        "en": "24/7 Access"
+      },
+      {
+        "ru": "Парковка",
+        "kk": "Тұрақ",
+        "en": "Parking"
+      }
     ],
     "rating": 4.6
   },
@@ -380,12 +531,21 @@
     "priceMeetingRoom": 2500,
     "whatsappNumber": "77009004717",
     "photos": [
-      "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1572025442646-866d16c84a54?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=800&q=80"
     ],
     "amenities": [
-      {"ru": "Wi-Fi 200 Мбит/с", "kk": "Wi-Fi 200 Мбит/с", "en": "Wi-Fi 200 Mbps"},
-      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"}
+      {
+        "ru": "Wi-Fi 200 Мбит/с",
+        "kk": "Wi-Fi 200 Мбит/с",
+        "en": "Wi-Fi 200 Mbps"
+      },
+      {
+        "ru": "Кофе-зона",
+        "kk": "Кофе-аймақ",
+        "en": "Coffee zone"
+      }
     ],
     "rating": 4.5
   },
@@ -415,19 +575,32 @@
     },
     "coordinates": {
       "lat": 43.2105,
-      "lng": 76.8400
+      "lng": 76.84
     },
     "priceFrom": 3000,
     "priceMeetingRoom": 2500,
     "whatsappNumber": "77477273030",
     "photos": [
-      "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=800&q=80"
     ],
     "amenities": [
-      {"ru": "Wi-Fi 200 Мбит/с", "kk": "Wi-Fi 200 Мбит/с", "en": "Wi-Fi 200 Mbps"},
-      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"},
-      {"ru": "Парковка", "kk": "Тұрақ", "en": "Parking"}
+      {
+        "ru": "Wi-Fi 200 Мбит/с",
+        "kk": "Wi-Fi 200 Мбит/с",
+        "en": "Wi-Fi 200 Mbps"
+      },
+      {
+        "ru": "Кофе-зона",
+        "kk": "Кофе-аймақ",
+        "en": "Coffee zone"
+      },
+      {
+        "ru": "Парковка",
+        "kk": "Тұрақ",
+        "en": "Parking"
+      }
     ],
     "rating": 4.3
   },
@@ -456,21 +629,38 @@
       "en": "Bostandyk district"
     },
     "coordinates": {
-      "lat": 43.2050,
-      "lng": 76.8900
+      "lat": 43.205,
+      "lng": 76.89
     },
     "priceFrom": 4500,
     "priceMeetingRoom": 4000,
     "whatsappNumber": "77773105777",
     "photos": [
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&w=800&q=80"
     ],
     "amenities": [
-      {"ru": "Wi-Fi 300 Мбит/с", "kk": "Wi-Fi 300 Мбит/с", "en": "Wi-Fi 300 Mbps"},
-      {"ru": "Доступ 24/7", "kk": "Тәулік бойы қолжетімділік", "en": "24/7 Access"},
-      {"ru": "Парковка", "kk": "Тұрақ", "en": "Parking"},
-      {"ru": "Переговорная", "kk": "Келіссөз бөлмесі", "en": "Meeting room"}
+      {
+        "ru": "Wi-Fi 300 Мбит/с",
+        "kk": "Wi-Fi 300 Мбит/с",
+        "en": "Wi-Fi 300 Mbps"
+      },
+      {
+        "ru": "Доступ 24/7",
+        "kk": "Тәулік бойы қолжетімділік",
+        "en": "24/7 Access"
+      },
+      {
+        "ru": "Парковка",
+        "kk": "Тұрақ",
+        "en": "Parking"
+      },
+      {
+        "ru": "Переговорная",
+        "kk": "Келіссөз бөлмесі",
+        "en": "Meeting room"
+      }
     ],
     "rating": 4.7
   }
