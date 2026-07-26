@@ -54,6 +54,8 @@ interface MapComponentProps {
   center?: [number, number];
   zoom?: number;
   className?: string;
+  scrollWheelZoom?: boolean;
+  touchZoom?: boolean;
 }
 
 function MapUpdater({ coworkings, userLocation }: { coworkings: Coworking[], userLocation?: {lat: number, lng: number} | null }) {
@@ -81,7 +83,9 @@ export default function MapComponent({
   userLocation,
   center = [43.2389, 76.8897], // Default Almaty center
   zoom = 12,
-  className = "w-full h-full min-h-[400px] rounded-2xl z-0"
+  className = "w-full h-full min-h-[400px] rounded-2xl z-0",
+  scrollWheelZoom = true,
+  touchZoom = true
 }: MapComponentProps) {
   const t = useTranslations('Card');
   // fallback if needed
@@ -94,8 +98,8 @@ export default function MapComponent({
     <MapContainer 
       center={mapCenter} 
       zoom={mapZoom} 
-      scrollWheelZoom={true}
-      touchZoom={true}
+      scrollWheelZoom={scrollWheelZoom}
+      touchZoom={touchZoom}
       className={className}
     >
       <MapUpdater coworkings={coworkings} userLocation={userLocation} />
