@@ -10,6 +10,14 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'images.unsplash.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'avatars.mds.yandex.net',
+      },
+      {
+        protocol: 'https',
+        hostname: 'disk.2gis.com',
+      },
     ],
   },
 };

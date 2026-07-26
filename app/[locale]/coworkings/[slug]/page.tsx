@@ -109,7 +109,7 @@ export default async function CoworkingPage({ params }: { params: Promise<{ loca
       
       <div className="bg-gray-50 min-h-screen pb-24 md:pb-12">
         {/* Photo Gallery Hero */}
-        <div className="w-full h-[40vh] md:h-[50vh] min-h-[300px] grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2">
+        <div className="w-full h-[25vh] md:h-[30vh] min-h-[200px] max-h-[280px] grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2">
           <div className="relative h-full md:col-span-2 overflow-hidden">
             <Image src={coworking.photos[0]} alt={coworking.name} fill className="object-cover" priority />
           </div>
