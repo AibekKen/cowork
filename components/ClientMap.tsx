@@ -17,8 +17,10 @@ interface ClientMapProps {
   center?: [number, number];
   zoom?: number;
   className?: string;
+  scrollWheelZoom?: boolean;
+  touchZoom?: boolean;
 }
 
 export default function ClientMap(props: ClientMapProps) {
-  return <MapComponent {...props} />;
+  return <MapComponent {...props} scrollWheelZoom={true} touchZoom={true} />;
 }

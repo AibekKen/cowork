@@ -20,7 +20,7 @@ export default function CoworkingCard({ coworking }: CoworkingCardProps) {
 
   return (
     <div className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col h-full">
-      <Link href={`/coworkings/${coworking.slug}`} className="block relative aspect-[4/3] overflow-hidden">
+      <Link href={`/coworkings/${coworking.slug}`} className="block relative aspect-[4/3] overflow-hidden m-2.5 rounded-xl">
         <Image
           src={coworking.photos[0]}
           alt={coworking.name}
@@ -28,12 +28,12 @@ export default function CoworkingCard({ coworking }: CoworkingCardProps) {
           className="object-cover group-hover:scale-105 transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-xs font-semibold text-gray-900 shadow-sm flex items-center gap-1">
+        {/* <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-xs font-semibold text-gray-900 shadow-sm flex items-center gap-1">
           ★ {coworking.rating}
-        </div>
+        </div> */}
       </Link>
       
-      <div className="p-5 flex flex-col flex-grow">
+      <div className="px-5 pb-5 pt-2 flex flex-col flex-grow">
         <div className="flex items-start justify-between mb-2 gap-2">
           <Link href={`/coworkings/${coworking.slug}`}>
             <h3 className="font-bold text-xl text-gray-900 hover:text-emerald-500 transition-colors line-clamp-1">
@@ -59,17 +59,17 @@ export default function CoworkingCard({ coworking }: CoworkingCardProps) {
           </div>
           <div className="flex items-center gap-1.5 shrink-0 pt-0.5">
             <a 
-              href={`https://2gis.kz/almaty/search/${coworking.coordinates.lat},${coworking.coordinates.lng}`}
+              href={`https://2gis.kz/almaty/search/${encodeURIComponent(getLocalized(coworking.address))}`}
               target="_blank" rel="noopener noreferrer"
-              className="text-[10px] font-bold text-white bg-[#a3c33b] px-1.5 py-0.5 rounded shadow-sm hover:bg-[#8da731] transition-colors"
+              className="text-[10px] font-bold !text-white bg-[#a3c33b] px-1.5 py-0.5 rounded shadow-sm hover:bg-[#8da731] transition-colors"
               title="Маршрут в 2GIS"
             >
               2GIS
             </a>
             <a 
-              href={`https://www.google.com/maps/dir/?api=1&destination=${coworking.coordinates.lat},${coworking.coordinates.lng}`}
+              href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(getLocalized(coworking.address) + ', Алматы')}`}
               target="_blank" rel="noopener noreferrer"
-              className="text-[10px] font-bold text-white bg-blue-500 px-1.5 py-0.5 rounded shadow-sm hover:bg-blue-600 transition-colors"
+              className="text-[10px] font-bold !text-white bg-blue-500 px-1.5 py-0.5 rounded shadow-sm hover:bg-blue-600 transition-colors"
               title="Маршрут в Google Maps"
             >
               Google
@@ -97,20 +97,29 @@ export default function CoworkingCard({ coworking }: CoworkingCardProps) {
         
         <div className="mt-auto pt-4 border-t border-gray-100">
           <div className="flex items-center justify-between mb-4">
-            <div>
-              <p className="text-xs text-gray-500 mb-0.5">{t('day_from')}</p>
-              <p className="font-bold text-lg text-gray-900">{coworking.priceFrom.toLocaleString('ru-RU')} {t('currency')}</p>
+            <div className="flex flex-col">
+              <span className="text-gray-500 text-xs uppercase tracking-wider font-semibold">{t('day_from')}</span>
+              {Number(coworking.priceFrom) > 0 ? (
+                <span className="text-xl font-extrabold text-gray-900">{Number(coworking.priceFrom).toLocaleString('ru-RU')} <span className="text-sm font-medium text-gray-500">{t('currency')}</span></span>
+              ) : (
+                <span className="text-lg font-bold text-gray-900">{t('on_request')}</span>
+              )}
             </div>
-            <div className="text-right">
-              <p className="text-xs text-gray-500 mb-0.5">{t('meeting_from')}</p>
-              <p className="font-semibold text-gray-900">{coworking.priceMeetingRoom.toLocaleString('ru-RU')} {t('currency_hour')}</p>
+            
+            <div className="flex flex-col items-end">
+              <span className="text-gray-500 text-xs uppercase tracking-wider font-semibold">{t('meeting_from')}</span>
+              {Number(coworking.priceMeetingRoom) > 0 ? (
+                <span className="text-xl font-extrabold text-gray-900">{Number(coworking.priceMeetingRoom).toLocaleString('ru-RU')} <span className="text-sm font-medium text-gray-500">{t('currency_hour')}</span></span>
+              ) : (
+                <span className="text-lg font-bold text-gray-900">{t('on_request')}</span>
+              )}
             </div>
           </div>
           
           <div className="flex gap-2">
             <Link 
               href={`/coworkings/${coworking.slug}`}
-              className="flex-1 inline-flex items-center justify-center gap-1 bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium rounded-xl px-4 py-2.5 transition-colors text-sm"
+              className="flex-1 inline-flex items-center justify-center gap-1 bg-gray-100 hover:bg-gray-200 !text-gray-900 font-bold rounded-xl px-4 py-2.5 transition-colors text-sm"
             >
               {t('details')}
             </Link>

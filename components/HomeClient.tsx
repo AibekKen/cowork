@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import dynamic from 'next/dynamic';
-import { LayoutGrid, Map as MapIcon } from 'lucide-react';
+import { LayoutGrid, Map as MapIcon, Search } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Coworking, LocalizedString } from '@/types/coworking';
 import CoworkingCard from './CoworkingCard';
@@ -30,14 +30,12 @@ export default function HomeClient({ initialCoworkings, locale }: HomeClientProp
   
   const DISTRICTS = [
     t('all_districts'), 
-    getLocalized(initialCoworkings[0].district, locale), // Бостандыкский
-    getLocalized(initialCoworkings[1].district, locale), // Медеуский
-    getLocalized(initialCoworkings[2].district, locale), // Алмалинский
-    getLocalized(initialCoworkings[9].district, locale)  // Ауэзовский
+    ...Array.from(new Set(initialCoworkings.map(c => getLocalized(c.district, locale))))
   ];
 
   const [view, setView] = useState<'grid' | 'map'>('grid');
   const [district, setDistrict] = useState(DISTRICTS[0]);
+  const [sortBy, setSortBy] = useState<'default' | 'cheap' | 'expensive'>('default');
   const [has247, setHas247] = useState(false);
   const [hasMeetingRoom, setHasMeetingRoom] = useState(false);
   
@@ -45,6 +43,7 @@ export default function HomeClient({ initialCoworkings, locale }: HomeClientProp
   const [isLocating, setIsLocating] = useState(false);
   const [showNearby, setShowNearby] = useState(false);
   const [geoError, setGeoError] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState('');
   const [hasRequestedMapLocation, setHasRequestedMapLocation] = useState(false);
 
   const requestGeolocation = (onSuccess?: () => void, onError?: () => void) => {
@@ -95,6 +94,13 @@ export default function HomeClient({ initialCoworkings, locale }: HomeClientProp
 
   const filteredCoworkings = useMemo(() => {
     let result = initialCoworkings.filter(c => {
+      if (searchQuery.trim() !== '') {
+        const query = searchQuery.toLowerCase();
+        if (!c.name.toLowerCase().includes(query)) {
+          return false;
+        }
+      }
+      
       const cDistrict = getLocalized(c.district, locale);
       if (district !== DISTRICTS[0] && cDistrict !== district) return false;
       if (has247 && !c.amenities.some(a => getLocalized(a, locale).includes("24/7"))) return false;
@@ -107,22 +113,80 @@ export default function HomeClient({ initialCoworkings, locale }: HomeClientProp
 
     if (showNearby && userLocation) {
       result.sort((a, b) => (a.distance || 0) - (b.distance || 0));
+    } else if (sortBy === 'cheap') {
+      result.sort((a, b) => {
+        const pA = Number(a.priceFrom);
+        const pB = Number(b.priceFrom);
+        const validA = !isNaN(pA) && pA > 0;
+        const validB = !isNaN(pB) && pB > 0;
+        
+        if (!validA && validB) return 1;
+        if (validA && !validB) return -1;
+        if (!validA && !validB) return 0;
+        
+        return pA - pB;
+      });
+    } else if (sortBy === 'expensive') {
+      result.sort((a, b) => {
+        const pA = Number(a.priceFrom);
+        const pB = Number(b.priceFrom);
+        const validA = !isNaN(pA) && pA > 0;
+        const validB = !isNaN(pB) && pB > 0;
+        
+        if (!validA && validB) return 1;
+        if (validA && !validB) return -1;
+        if (!validA && !validB) return 0;
+        
+        return pB - pA;
+      });
+    } else {
+      // Default: push no-price coworkings to the end, keeping relative order
+      result.sort((a, b) => {
+        const pA = Number(a.priceFrom);
+        const pB = Number(b.priceFrom);
+        const validA = !isNaN(pA) && pA > 0;
+        const validB = !isNaN(pB) && pB > 0;
+        
+        if (!validA && validB) return 1;
+        if (validA && !validB) return -1;
+        return 0;
+      });
     }
 
     return result;
-  }, [initialCoworkings, district, has247, hasMeetingRoom, locale, userLocation, showNearby]);
+  }, [initialCoworkings, district, sortBy, has247, hasMeetingRoom, locale, userLocation, showNearby, searchQuery]);
 
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Filters Section */}
       <div className="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-gray-100 mb-8 flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
-        <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+        <div className="flex flex-col sm:flex-row flex-wrap gap-4 w-full md:w-auto">
+          <div className="relative w-full sm:w-[250px]">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
+            <input 
+              type="text"
+              placeholder={t('search_placeholder')}
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="bg-gray-50 border border-gray-200 text-gray-900 text-sm rounded-xl focus:ring-emerald-500 focus:border-emerald-500 block w-full pl-10 p-2.5 transition-colors"
+            />
+          </div>
           <select 
             value={district}
             onChange={(e) => setDistrict(e.target.value)}
             className="bg-gray-50 border border-gray-200 text-gray-900 text-sm rounded-xl focus:ring-emerald-500 focus:border-emerald-500 block p-2.5 w-full sm:w-[200px]"
           >
             {DISTRICTS.map(d => <option key={d} value={d}>{d}</option>)}
+          </select>
+          
+          <select 
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value as 'default' | 'cheap' | 'expensive')}
+            className="bg-gray-50 border border-gray-200 text-gray-900 text-sm rounded-xl focus:ring-emerald-500 focus:border-emerald-500 block p-2.5 w-full sm:w-[180px]"
+          >
+            <option value="default">{t('sort_default')}</option>
+            <option value="cheap">{t('sort_cheap')}</option>
+            <option value="expensive">{t('sort_expensive')}</option>
           </select>
           
           <label className="flex items-center gap-2 cursor-pointer bg-gray-50 border border-gray-200 px-3 py-2.5 rounded-xl hover:bg-gray-100 transition-colors">
@@ -181,7 +245,7 @@ export default function HomeClient({ initialCoworkings, locale }: HomeClientProp
           )}
         </div>
       ) : (
-        <div className="h-[600px] w-full rounded-2xl overflow-hidden shadow-sm border border-gray-200">
+        <div className="h-[75vh] min-h-[600px] w-full rounded-2xl overflow-hidden shadow-sm border border-gray-200">
           <MapComponent 
             coworkings={filteredCoworkings} 
             userLocation={userLocation}

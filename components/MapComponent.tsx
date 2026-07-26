@@ -6,18 +6,33 @@ import 'leaflet/dist/leaflet.css';
 import { Icon, divIcon, latLngBounds } from 'leaflet';
 import { useTranslations } from 'next-intl';
 import { Coworking, LocalizedString } from '@/types/coworking';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 
-// Fix for default marker icon in Next.js + Leaflet
-const customIcon = new Icon({
-  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-  iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41]
+// Custom thematic marker (Office Building)
+const customIcon = divIcon({
+  className: 'bg-transparent border-none',
+  html: `
+    <div class="relative flex items-center justify-center w-8 h-8 transition-transform duration-300 hover:scale-110 group">
+      <div class="absolute inset-0 bg-emerald-500 rounded-xl shadow-lg shadow-emerald-500/40 rotate-45 group-hover:bg-emerald-400 transition-colors"></div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="relative z-10 -rotate-0">
+        <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+        <path d="M9 22v-4h6v4"></path>
+        <path d="M8 6h.01"></path>
+        <path d="M16 6h.01"></path>
+        <path d="M12 6h.01"></path>
+        <path d="M12 10h.01"></path>
+        <path d="M12 14h.01"></path>
+        <path d="M16 10h.01"></path>
+        <path d="M16 14h.01"></path>
+        <path d="M8 10h.01"></path>
+        <path d="M8 14h.01"></path>
+      </svg>
+    </div>
+  `,
+  iconSize: [32, 32],
+  iconAnchor: [16, 32],
+  popupAnchor: [0, -32]
 });
 
 const userIcon = divIcon({
@@ -79,7 +94,8 @@ export default function MapComponent({
     <MapContainer 
       center={mapCenter} 
       zoom={mapZoom} 
-      scrollWheelZoom={false}
+      scrollWheelZoom={true}
+      touchZoom={true}
       className={className}
     >
       <MapUpdater coworkings={coworkings} userLocation={userLocation} />
@@ -106,7 +122,7 @@ export default function MapComponent({
         >
           <Popup className="rounded-xl overflow-hidden">
             <div className="w-[200px]">
-              <div className="relative w-full h-[100px] -mt-4 -mx-5 mb-2">
+              <div className="relative w-full h-[100px] mb-2 rounded-xl overflow-hidden mt-1">
                 <Image 
                   src={coworking.photos[0]} 
                   alt={coworking.name} 
@@ -114,29 +130,30 @@ export default function MapComponent({
                   className="object-cover"
                 />
               </div>
-              <h3 className="font-bold text-base mb-1">{coworking.name}</h3>
-              <p className="text-xs text-gray-500 mb-2">{coworking.priceFrom} ₸/день</p>
+              <h3 className="font-bold text-base mb-1 text-center">{coworking.name}</h3>
+              <p className="text-xs text-gray-500 mb-1 text-center line-clamp-1">{(coworking.address as any)['ru'] || coworking.address}</p>
+              <p className="text-xs text-gray-900 font-medium mb-3 text-center">{coworking.priceFrom} ₸/день</p>
               <Link 
                 href={`/coworkings/${coworking.slug}`}
-                className="block w-full text-center bg-gray-100 text-gray-800 rounded-md py-1.5 text-sm font-medium hover:bg-gray-200 transition-colors mb-1"
+                className="block w-full text-center bg-gray-100 hover:bg-gray-200 !text-gray-900 rounded-md py-1.5 text-sm font-bold transition-colors mb-2 shadow-sm"
               >
                 {t('details')}
               </Link>
               <div className="flex gap-1">
                 <a 
-                  href={`https://2gis.kz/almaty/search/${coworking.coordinates.lat},${coworking.coordinates.lng}`} 
+                  href={`https://2gis.kz/almaty/search/${encodeURIComponent((coworking.address as any)['ru'] || coworking.address)}`} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex-1 text-center bg-[#a3c33b] text-white rounded-md py-1.5 text-xs font-medium hover:bg-[#8da731] transition-colors"
+                  className="flex-1 text-center bg-[#a3c33b] !text-white rounded-md py-1.5 text-xs font-medium hover:bg-[#8da731] transition-colors"
                   title="2GIS"
                 >
                   2GIS
                 </a>
                 <a 
-                  href={`https://www.google.com/maps/dir/?api=1&destination=${coworking.coordinates.lat},${coworking.coordinates.lng}`} 
+                  href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(((coworking.address as any)['ru'] || coworking.address) + ', Алматы')}`} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex-1 text-center bg-blue-500 text-white rounded-md py-1.5 text-xs font-medium hover:bg-blue-600 transition-colors"
+                  className="flex-1 text-center bg-blue-500 !text-white rounded-md py-1.5 text-xs font-medium hover:bg-blue-600 transition-colors"
                   title="Google Maps"
                 >
                   Google

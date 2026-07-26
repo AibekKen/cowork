@@ -36,7 +36,11 @@
     "empty": "Nothing found for your request. Try changing the filters.",
     "nearby": "Nearby",
     "locating": "Locating...",
-    "geo_error": "Geolocation access error"
+    "geo_error": "Geolocation access error",
+    "sort_default": "Default",
+    "sort_cheap": "Cheapest first",
+    "sort_expensive": "Most expensive first",
+    "search_placeholder": "Search by name..."
   },
   "Card": {
     "amenities_more": "+{count} amenities",
@@ -44,6 +48,7 @@
     "meeting_from": "Meeting room from",
     "currency": "₸",
     "currency_hour": "₸/h",
+    "on_request": "On request",
     "details": "Details",
     "whatsapp": "WhatsApp",
     "wa_message": "Hello! I found the coworking {name} on Kenzcore Space and would like to know..."
@@ -61,6 +66,7 @@
     "fix_desk_desc": "Assigned desk (approximate)",
     "meeting": "Meeting Room / Hour",
     "meeting_desc": "Up to 6 people, whiteboard",
+    "on_request": "On request",
     "wa_direct": "Direct communication with the admin.",
     "wa_alert": "The specified prices are for informational purposes. The final cost and availability of free spaces are confirmed by the coworking itself.",
     "open_2gis": "Open in 2GIS",

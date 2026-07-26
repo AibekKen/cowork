@@ -132,9 +132,9 @@ export default async function CoworkingPage({ params }: { params: Promise<{ loca
             <div className="lg:col-span-2 space-y-8">
               <div>
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="bg-white border border-gray-200 px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-1.5 shadow-sm">
+                  {/* <span className="bg-white border border-gray-200 px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-1.5 shadow-sm">
                     <Star className="text-yellow-400 fill-yellow-400" size={16} /> {coworking.rating}
-                  </span>
+                  </span> */}
                   <span className="text-sm font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">{t('verified')}</span>
                 </div>
                 <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
@@ -172,7 +172,7 @@ export default async function CoworkingPage({ params }: { params: Promise<{ loca
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 mt-4">
                   <a 
-                    href={`https://2gis.kz/almaty/search/${coworking.coordinates.lat},${coworking.coordinates.lng}`} 
+                    href={`https://2gis.kz/almaty/search/${encodeURIComponent(getLocalized(coworking.address, locale))}`} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex-1 inline-flex items-center justify-center gap-2 bg-[#a3c33b] hover:bg-[#8da731] text-white font-medium rounded-xl px-4 py-3 transition-colors text-sm shadow-sm"
@@ -181,7 +181,7 @@ export default async function CoworkingPage({ params }: { params: Promise<{ loca
                     {t('open_2gis')}
                   </a>
                   <a 
-                    href={`https://www.google.com/maps/dir/?api=1&destination=${coworking.coordinates.lat},${coworking.coordinates.lng}`} 
+                    href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(getLocalized(coworking.address, locale) + ', Алматы')}`} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex-1 inline-flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-xl px-4 py-3 transition-colors text-sm shadow-sm"
@@ -206,23 +206,24 @@ export default async function CoworkingPage({ params }: { params: Promise<{ loca
                   <div>
                     <div className="flex justify-between items-end mb-1">
                       <span className="text-gray-600 font-medium">{t('hot_desk')}</span>
-                      <span className="text-xl font-bold text-gray-900">{coworking.priceFrom.toLocaleString('ru-RU')} ₸</span>
+                      {Number(coworking.priceFrom) > 0 ? (
+                        <span className="text-xl font-bold text-gray-900">{Number(coworking.priceFrom).toLocaleString('ru-RU')} ₸</span>
+                      ) : (
+                        <div className="text-xl font-bold text-gray-900 mb-1">{t('on_request')}</div>
+                      )}
                     </div>
                     <p className="text-xs text-gray-500">{t('hot_desk_desc')}</p>
                   </div>
                   
-                  <div>
-                    <div className="flex justify-between items-end mb-1">
-                      <span className="text-gray-600 font-medium">{t('fix_desk')}</span>
-                      <span className="text-xl font-bold text-gray-900">{(coworking.priceFrom * 20).toLocaleString('ru-RU')} ₸</span>
-                    </div>
-                    <p className="text-xs text-gray-500">{t('fix_desk_desc')}</p>
-                  </div>
 
                   <div>
                     <div className="flex justify-between items-end mb-1">
                       <span className="text-gray-600 font-medium">{t('meeting')}</span>
-                      <span className="text-xl font-bold text-gray-900">{coworking.priceMeetingRoom.toLocaleString('ru-RU')} ₸</span>
+                      {Number(coworking.priceMeetingRoom) > 0 ? (
+                        <span className="text-xl font-bold text-gray-900">{Number(coworking.priceMeetingRoom).toLocaleString('ru-RU')} ₸</span>
+                      ) : (
+                        <div className="text-xl font-bold text-gray-900 mb-1">{t('on_request')}</div>
+                      )}
                     </div>
                     <p className="text-xs text-gray-500">{t('meeting_desc')}</p>
                   </div>
@@ -249,12 +250,20 @@ export default async function CoworkingPage({ params }: { params: Promise<{ loca
       <div className="md:hidden fixed bottom-0 left-0 right-0 p-4 bg-white/90 backdrop-blur-md border-t border-gray-200 shadow-[0_-10px_20px_rgba(0,0,0,0.05)] z-40">
         <div className="flex items-center justify-between mb-3 px-1">
           <div>
-            <p className="text-xs text-gray-500">День от</p>
-            <p className="font-bold text-gray-900">{coworking.priceFrom.toLocaleString('ru-RU')} ₸</p>
+            <p className="text-xs text-gray-500">{t('day_from')}</p>
+            {Number(coworking.priceFrom) > 0 ? (
+              <p className="font-bold text-gray-900">{Number(coworking.priceFrom).toLocaleString('ru-RU')} ₸</p>
+            ) : (
+              <p className="font-bold text-gray-900">{t('on_request')}</p>
+            )}
           </div>
           <div className="text-right">
-            <p className="text-xs text-gray-500">Переговорка</p>
-            <p className="font-bold text-gray-900">{coworking.priceMeetingRoom.toLocaleString('ru-RU')} ₸/ч</p>
+            <p className="text-xs text-gray-500">{t('meeting_from')}</p>
+            {Number(coworking.priceMeetingRoom) > 0 ? (
+              <p className="font-bold text-gray-900">{Number(coworking.priceMeetingRoom).toLocaleString('ru-RU')} ₸/ч</p>
+            ) : (
+              <p className="font-bold text-gray-900">{t('on_request')}</p>
+            )}
           </div>
         </div>
         <WhatsAppButton 
