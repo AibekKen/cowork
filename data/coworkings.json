@@ -4,14 +4,14 @@
     "slug": "smart-point-almaty",
     "name": "SmArt.Point",
     "description": {
-      "ru": "Крупнейший IT-хаб в Центральной Азии со всем необходимым для работы и отдыха.",
-      "kk": "Орталық Азиядағы ең ірі IT-хаб, жұмыс пен демалысқа қажетті барлық жағдай жасалған.",
-      "en": "The largest IT hub in Central Asia with everything needed for work and relaxation."
+      "ru": "Крупнейший коворкинг в Центральной Азии с развитой инфраструктурой для IT-компаний и фрилансеров.",
+      "kk": "IT-компаниялар мен фрилансерлерге арналған дамыған инфрақұрылымы бар Орталық Азиядағы ең ірі коворкинг.",
+      "en": "The largest coworking space in Central Asia with developed infrastructure for IT companies and freelancers."
     },
     "fullDescription": {
-      "ru": "SmArt.Point предлагает не только рабочие места, но и капсулы для сна, фитнес-зал, душевые, игровые зоны с PlayStation и зоны для неформального общения.",
-      "kk": "SmArt.Point тек жұмыс орындарын ғана емес, ұйықтау капсулаларын, фитнес-зал, душ, PlayStation ойын аймақтарын және бейресми қарым-қатынас аймақтарын ұсынады.",
-      "en": "SmArt.Point offers not just workspaces, but sleep capsules, a fitness room, showers, PlayStation gaming zones, and informal networking areas."
+      "ru": "SmArt.Point — это не просто рабочее пространство, это экосистема для инноваторов и стартапов. Мы предлагаем круглосуточный доступ, высокоскоростной интернет, современные переговорные комнаты и зоны отдыха, включая кафе и игровые зоны.",
+      "kk": "SmArt.Point — бұл жай ғана жұмыс кеңістігі емес, ол инноваторлар мен стартаптарға арналған экожүйе. Біз тәулік бойы қолжетімділікті, жоғары жылдамдықты интернетті, заманауи келіссөз бөлмелерін және демалыс аймақтарын ұсынамыз.",
+      "en": "SmArt.Point is not just a workspace; it is an ecosystem for innovators and startups. We offer 24/7 access, high-speed internet, modern meeting rooms, and recreation areas, including cafes and gaming zones."
     },
     "address": {
       "ru": "ул. Байзакова, 280, Алматы",
@@ -24,11 +24,11 @@
       "en": "Bostandyk district"
     },
     "coordinates": {
-      "lat": 43.23838,
-      "lng": 76.914902
+      "lat": 43.2383,
+      "lng": 76.9149
     },
-    "priceFrom": 5000,
-    "priceMeetingRoom": 4000,
+    "priceFrom": 6000,
+    "priceMeetingRoom": 0,
     "whatsappNumber": "77710707187",
     "photos": [
       "https://avatars.mds.yandex.net/i?id=1f099f3003cdf9e07f0beddb1e6caf3279bf52f8-5488209-images-thumbs&n=13",
@@ -37,9 +37,9 @@
     ],
     "amenities": [
       {
-        "ru": "Wi-Fi",
-        "kk": "Wi-Fi",
-        "en": "Wi-Fi"
+        "ru": "Wi-Fi 500 Мбит/с",
+        "kk": "Wi-Fi 500 Мбит/с",
+        "en": "Wi-Fi 500 Mbps"
       },
       {
         "ru": "Доступ 24/7",
@@ -47,19 +47,24 @@
         "en": "24/7 Access"
       },
       {
-        "ru": "Капсулы для сна",
-        "kk": "Ұйықтау капсулалары",
-        "en": "Sleep capsules"
+        "ru": "Кофе-зона",
+        "kk": "Кофе-аймақ",
+        "en": "Coffee zone"
       },
       {
-        "ru": "Фитнес и душевые",
-        "kk": "Фитнес және душ",
-        "en": "Fitness & showers"
+        "ru": "Парковка",
+        "kk": "Тұрақ",
+        "en": "Parking"
       },
       {
-        "ru": "Игровые зоны",
-        "kk": "Ойын аймақтары",
-        "en": "Gaming zones"
+        "ru": "Зум-кабины",
+        "kk": "Зум-кабиналар",
+        "en": "Zoom booths"
+      },
+      {
+        "ru": "Генератор/ИБП",
+        "kk": "Генератор/ҮҚК",
+        "en": "Generator/UPS"
       }
     ],
     "rating": 4.8
@@ -69,31 +74,31 @@
     "slug": "most-it-hub",
     "name": "MOST IT Hub",
     "description": {
-      "ru": "Специализированная экосистема для IT-компаний и венчурных инвесторов.",
-      "kk": "IT-компаниялар мен венчурлық инвесторларға арналған мамандандырылған экожүйе.",
-      "en": "A specialized ecosystem for IT companies and venture investors."
+      "ru": "Современное пространство для IT-энтузиастов и креативных команд в самом сердце города.",
+      "kk": "Қаланың қақ ортасындағы IT-энтузиастар мен креативті командаларға арналған заманауи кеңістік.",
+      "en": "A modern space for IT enthusiasts and creative teams in the heart of the city."
     },
     "fullDescription": {
-      "ru": "Дизайн MOST IT Hub вдохновлен ландшафтом Алматы. Резидентам доступны террасы, кафе, конференц-залы и доступ к ресурсам инкубатора MOST.",
-      "kk": "MOST IT Hub дизайны Алматы ландшафтынан шабыттанған. Резиденттерге террасалар, кафелер, конференц-залдар және MOST инкубаторының ресурстары қолжетімді.",
-      "en": "The design of MOST IT Hub is inspired by the landscape of Almaty. Residents have access to terraces, cafes, conference rooms, and MOST incubator resources."
+      "ru": "MOST IT Hub предоставляет идеальные условия для продуктивной работы. В вашем распоряжении комфортные рабочие места, переговорные комнаты, зона для мероприятий и нетворкинга.",
+      "kk": "MOST IT Hub өнімді жұмыс істеу үшін тамаша жағдай жасайды. Сіздің иелігіңізде жайлы жұмыс орындары, келіссөз бөлмелері, іс-шаралар мен нетворкингке арналған аймақ бар.",
+      "en": "MOST IT Hub provides ideal conditions for productive work. Comfortable workplaces, meeting rooms, and an area for events and networking are at your disposal."
     },
     "address": {
-      "ru": "Ходжанова 2/2, БЦ Fortis",
-      "kk": "Ходжанова 2/2, БО Fortis",
-      "en": "2/2 Khojanov St, BC Fortis"
+      "ru": "пр. Достык, 16, Алматы",
+      "kk": "Достық даңғылы, 16, Алматы",
+      "en": "16 Dostyk Ave, Almaty"
     },
     "district": {
-      "ru": "Бостандыкский район",
-      "kk": "Бостандык ауданы",
-      "en": "Bostandyk district"
+      "ru": "Медеуский район",
+      "kk": "Медеу ауданы",
+      "en": "Medeu district"
     },
     "coordinates": {
-      "lat": 43.2168,
-      "lng": 76.9115
+      "lat": 43.2581,
+      "lng": 76.9535
     },
-    "priceFrom": 6000,
-    "priceMeetingRoom": 5000,
+    "priceFrom": 0,
+    "priceMeetingRoom": 0,
     "whatsappNumber": "77055353222",
     "photos": [
       "https://avatars.mds.yandex.net/i?id=3af00ef3c51c019511be5a15f1150e4cc4340ba5-13203112-images-thumbs&n=13",
@@ -102,14 +107,9 @@
     ],
     "amenities": [
       {
-        "ru": "Wi-Fi",
-        "kk": "Wi-Fi",
-        "en": "Wi-Fi"
-      },
-      {
-        "ru": "Терраса",
-        "kk": "Терраса",
-        "en": "Terrace"
+        "ru": "Wi-Fi 1 Гбит/с",
+        "kk": "Wi-Fi 1 Гбит/с",
+        "en": "Wi-Fi 1 Gbps"
       },
       {
         "ru": "Доступ 24/7",
@@ -117,9 +117,19 @@
         "en": "24/7 Access"
       },
       {
-        "ru": "Доступ к инкубатору",
-        "kk": "Инкубаторға қолжетімділік",
-        "en": "Incubator access"
+        "ru": "Кофе-зона",
+        "kk": "Кофе-аймақ",
+        "en": "Coffee zone"
+      },
+      {
+        "ru": "Переговорная",
+        "kk": "Келіссөз бөлмесі",
+        "en": "Meeting room"
+      },
+      {
+        "ru": "Генератор/ИБП",
+        "kk": "Генератор/ҮҚК",
+        "en": "Generator/UPS"
       }
     ],
     "rating": 4.9
@@ -129,14 +139,14 @@
     "slug": "city-hub",
     "name": "City Hub",
     "description": {
-      "ru": "Pet-friendly коворкинг в историческом центре Алматы («Знаменитый шпиль»).",
-      "kk": "Алматының тарихи орталығында орналасқан Pet-friendly коворкинг.",
-      "en": "A pet-friendly coworking space in the historic center of Almaty."
+      "ru": "Уютное пространство в «Золотом квадрате» для мероприятий и продуктивной работы.",
+      "kk": "«Алтын шаршыдағы» іс-шаралар мен өнімді жұмысқа арналған жайлы кеңістік.",
+      "en": "A cozy space in the 'Golden Square' for events and productive work."
     },
     "fullDescription": {
-      "ru": "City Hub поддерживает концепцию «зеленого офиса». К вашим услугам смарт-офисы, услуги секретаря, персональные локеры и кофейня.",
-      "kk": "City Hub «жасыл кеңсе» тұжырымдамасын қолдайды. Сіздің иелігіңізде смарт-кеңселер, хатшы қызметтері, жеке локерлер және кофехана бар.",
-      "en": "City Hub supports the 'green office' concept. Smart offices, secretarial services, personal lockers, and a coffee shop are at your disposal."
+      "ru": "City Hub предлагает смарт-офисы, кухню, кафе и возможность проведения мероприятий и фотосессий в центре города.",
+      "kk": "City Hub смарт-кеңселерді, асүйді, дәмхананы және қала орталығында іс-шаралар мен фотосессиялар өткізу мүмкіндігін ұсынады.",
+      "en": "City Hub offers smart offices, a kitchen, a cafe, and the ability to host events and photoshoots in the city center."
     },
     "address": {
       "ru": "ул. Толе би, 55, Алматы",
@@ -149,11 +159,11 @@
       "en": "Almaly district"
     },
     "coordinates": {
-      "lat": 43.255229,
-      "lng": 76.945735
+      "lat": 43.2541,
+      "lng": 76.9405
     },
-    "priceFrom": 5500,
-    "priceMeetingRoom": 4500,
+    "priceFrom": 6000,
+    "priceMeetingRoom": 3500,
     "whatsappNumber": "77085070057",
     "photos": [
       "https://avatars.mds.yandex.net/i?id=95f79b2de7f7bcf6b733c57b34b9096d0a7cc22c-5251286-images-thumbs&n=13",
@@ -162,24 +172,29 @@
     ],
     "amenities": [
       {
-        "ru": "Pet-friendly",
-        "kk": "Үй жануарларымен кіруге болады",
-        "en": "Pet-friendly"
+        "ru": "Wi-Fi 500 Мбит/с",
+        "kk": "Wi-Fi 500 Мбит/с",
+        "en": "Wi-Fi 500 Mbps"
       },
       {
-        "ru": "Wi-Fi",
-        "kk": "Wi-Fi",
-        "en": "Wi-Fi"
+        "ru": "Доступ 24/7",
+        "kk": "Тәулік бойы қолжетімділік",
+        "en": "24/7 Access"
       },
       {
-        "ru": "Зеленый офис",
-        "kk": "Жасыл кеңсе",
-        "en": "Green office"
+        "ru": "Кофе-зона",
+        "kk": "Кофе-аймақ",
+        "en": "Coffee zone"
       },
       {
-        "ru": "Локеры",
-        "kk": "Локерлер",
-        "en": "Lockers"
+        "ru": "Парковка",
+        "kk": "Тұрақ",
+        "en": "Parking"
+      },
+      {
+        "ru": "Переговорная",
+        "kk": "Келіссөз бөлмесі",
+        "en": "Meeting room"
       }
     ],
     "rating": 4.7
@@ -189,14 +204,14 @@
     "slug": "fifty-four",
     "name": "FIFTY FOUR",
     "description": {
-      "ru": "Премиальное «инстаграмное» пространство в нью-йоркском стиле.",
-      "kk": "Нью-Йорк стиліндегі премиум «инстаграмдық» кеңістік.",
-      "en": "A premium 'Instagrammable' space in New York style."
+      "ru": "Бизнес-пространство в светлых тонах со стильным интерьером.",
+      "kk": "Стильді интерьері бар ашық түсті бизнес-кеңістік.",
+      "en": "A business space in light tones with a stylish interior."
     },
     "fullDescription": {
-      "ru": "FIFTY FOUR предлагает не только рабочие места, но и уютную аромакомнату, тихую библиотеку, панорамные окна и вкусную кофейню на первом этаже.",
-      "kk": "FIFTY FOUR жұмыс орындарын ғана емес, сонымен қатар жайлы арома-бөлмені, тыныш кітапхананы, панорамалық терезелерді және кофехананы ұсынады.",
-      "en": "FIFTY FOUR offers not only workspaces, but a cozy aroma room, a quiet library, panoramic windows, and a delicious coffee shop on the ground floor."
+      "ru": "FIFTY FOUR - это премиальный коворкинг с work-café, современными переговорными комнатами и уникальной зоной отдыха.",
+      "kk": "FIFTY FOUR - бұл work-café, заманауи келіссөз бөлмелері және бірегей демалыс аймағы бар премиум коворкинг.",
+      "en": "FIFTY FOUR is a premium coworking space with a work-café, modern meeting rooms, and a unique relaxation area."
     },
     "address": {
       "ru": "ул. Маншук Маметовой, 54, Алматы",
@@ -209,11 +224,11 @@
       "en": "Almaly district"
     },
     "coordinates": {
-      "lat": 43.26639,
-      "lng": 76.935808
+      "lat": 43.2642,
+      "lng": 76.9385
     },
-    "priceFrom": 6500,
-    "priceMeetingRoom": 5500,
+    "priceFrom": 7000,
+    "priceMeetingRoom": 5000,
     "whatsappNumber": "77013007262",
     "photos": [
       "https://avatars.mds.yandex.net/i?id=d4fbd6b244e6e65940fd4916a4d4fcdc7ddf9b04-5869592-images-thumbs&n=13",
@@ -222,24 +237,29 @@
     ],
     "amenities": [
       {
-        "ru": "Wi-Fi",
-        "kk": "Wi-Fi",
-        "en": "Wi-Fi"
+        "ru": "Wi-Fi 500 Мбит/с",
+        "kk": "Wi-Fi 500 Мбит/с",
+        "en": "Wi-Fi 500 Mbps"
       },
       {
-        "ru": "Аромакомната",
-        "kk": "Арома-бөлме",
-        "en": "Aroma room"
+        "ru": "Кофе-зона",
+        "kk": "Кофе-аймақ",
+        "en": "Coffee zone"
       },
       {
-        "ru": "Библиотека",
-        "kk": "Кітапхана",
-        "en": "Library"
+        "ru": "Переговорная",
+        "kk": "Келіссөз бөлмесі",
+        "en": "Meeting room"
       },
       {
-        "ru": "Кофейня",
-        "kk": "Кофехана",
-        "en": "Coffee shop"
+        "ru": "Доступ 24/7",
+        "kk": "Тәулік бойы қолжетімділік",
+        "en": "24/7 Access"
+      },
+      {
+        "ru": "Зум-кабины",
+        "kk": "Зум-кабиналар",
+        "en": "Zoom booths"
       }
     ],
     "rating": 4.9
@@ -249,19 +269,19 @@
     "slug": "sail-coworking",
     "name": "Sail Coworking",
     "description": {
-      "ru": "Офисы в стиле high-tech с аудиосистемами JBL и умным доступом.",
-      "kk": "JBL аудиожүйелері және ақылды қолжетімділігі бар high-tech стиліндегі кеңселер.",
-      "en": "High-tech offices with JBL audio systems and smart access."
+      "ru": "Офисы в стиле high-tech с круглосуточным доступом.",
+      "kk": "Тәулік бойы қолжетімділігі бар high-tech стиліндегі кеңселер.",
+      "en": "High-tech style offices with 24/7 access."
     },
     "fullDescription": {
-      "ru": "Современное рабочее пространство с безопасным входом через систему Clockster. Доступны оборудованные Zoom-комнаты и техническая поддержка.",
-      "kk": "Clockster жүйесі арқылы қауіпсіз кіретін заманауи жұмыс кеңістігі. Жабдықталған Zoom-бөлмелер мен техникалық қолдау қолжетімді.",
-      "en": "A modern workspace with secure entry via the Clockster system. Equipped Zoom rooms and technical support are available."
+      "ru": "Sail Coworking предоставляет услуги ресепшена, IT-поддержку и профессионально оборудованные конференц-залы.",
+      "kk": "Sail Coworking ресепшн қызметтерін, IT-қолдауды және кәсіби жабдықталған конференц-залдарды ұсынады.",
+      "en": "Sail Coworking provides reception services, IT support, and professionally equipped conference rooms."
     },
     "address": {
-      "ru": "пр. Гагарина, 124",
-      "kk": "Гагарин даңғылы, 124",
-      "en": "124 Gagarin Ave"
+      "ru": "пр. Назарбаева, 193, Алматы",
+      "kk": "Назарбаев даңғылы, 193, Алматы",
+      "en": "193 Nazarbayev Ave, Almaty"
     },
     "district": {
       "ru": "Бостандыкский район",
@@ -269,11 +289,11 @@
       "en": "Bostandyk district"
     },
     "coordinates": {
-      "lat": 43.23803,
-      "lng": 76.896255
+      "lat": 43.2425,
+      "lng": 76.9463
     },
     "priceFrom": 5000,
-    "priceMeetingRoom": 4000,
+    "priceMeetingRoom": 0,
     "whatsappNumber": "77775041481",
     "photos": [
       "/laptop1.jpg",
@@ -282,24 +302,29 @@
     ],
     "amenities": [
       {
-        "ru": "Wi-Fi",
-        "kk": "Wi-Fi",
-        "en": "Wi-Fi"
-      },
-      {
-        "ru": "Zoom-комнаты",
-        "kk": "Zoom-бөлмелер",
-        "en": "Zoom rooms"
-      },
-      {
-        "ru": "Доступ по Face ID",
-        "kk": "Face ID арқылы кіру",
-        "en": "Face ID access"
+        "ru": "Wi-Fi 1 Гбит/с",
+        "kk": "Wi-Fi 1 Гбит/с",
+        "en": "Wi-Fi 1 Gbps"
       },
       {
         "ru": "Доступ 24/7",
         "kk": "Тәулік бойы қолжетімділік",
         "en": "24/7 Access"
+      },
+      {
+        "ru": "Переговорная",
+        "kk": "Келіссөз бөлмесі",
+        "en": "Meeting room"
+      },
+      {
+        "ru": "Охрана",
+        "kk": "Күзет",
+        "en": "Security"
+      },
+      {
+        "ru": "Кофе-зона",
+        "kk": "Кофе-аймақ",
+        "en": "Coffee zone"
       }
     ],
     "rating": 4.7
@@ -309,14 +334,14 @@
     "slug": "jas-coworking",
     "name": "Jas Coworking",
     "description": {
-      "ru": "Удобный коворкинг с фокусом на спорт: фитнес-зал и йога-рум внутри.",
-      "kk": "Спортқа бағытталған ыңғайлы коворкинг: ішінде фитнес-зал мен йога-рум бар.",
-      "en": "A comfortable coworking space with a focus on sports: fitness hall and yoga room inside."
+      "ru": "Современное пространство, подходящее как для индивидуальной работы, так и для команд.",
+      "kk": "Жеке жұмыс істеуге де, командаларға да қолайлы заманауи кеңістік.",
+      "en": "A modern space suitable for both individual work and teams."
     },
     "fullDescription": {
-      "ru": "В Jas Coworking резиденты могут совмещать работу и заботу о здоровье. В здании есть раздевалки, душевые, а также просторная collaboration area.",
-      "kk": "Jas Coworking-те резиденттер жұмыс пен денсаулықты күтуді біріктіре алады. Ғимаратта киім ауыстыратын бөлмелер, душ, сондай-ақ кең collaboration area бар.",
-      "en": "At Jas Coworking, residents can combine work and health care. The building has locker rooms, showers, and a spacious collaboration area."
+      "ru": "Стильный коворкинг на Сейфуллина с большими окнами, эргономичными стульями и свежим кофе.",
+      "kk": "Сейфуллин көшесіндегі үлкен терезелері, эргономикалық орындықтары және жаңа піскен кофесі бар стильді коворкинг.",
+      "en": "A stylish coworking space on Seifullin with large windows, ergonomic chairs, and fresh coffee."
     },
     "address": {
       "ru": "пр. Сейфуллина, 609, Алматы",
@@ -324,16 +349,16 @@
       "en": "609 Seifullin Ave, Almaty"
     },
     "district": {
-      "ru": "Бостандыкский район",
-      "kk": "Бостандық ауданы",
-      "en": "Bostandyk district"
+      "ru": "Алмалинский район",
+      "kk": "Алмалы ауданы",
+      "en": "Almaly district"
     },
     "coordinates": {
-      "lat": 43.236027,
-      "lng": 76.935422
+      "lat": 43.2405,
+      "lng": 76.932
     },
-    "priceFrom": 4500,
-    "priceMeetingRoom": 3500,
+    "priceFrom": 7500,
+    "priceMeetingRoom": 7000,
     "whatsappNumber": "77083590869",
     "photos": [
       "https://avatars.mds.yandex.net/i?id=7de0415905e71bc31e51d566440ec54d1f695c26-4935648-images-thumbs&n=13",
@@ -342,24 +367,19 @@
     ],
     "amenities": [
       {
-        "ru": "Wi-Fi",
-        "kk": "Wi-Fi",
-        "en": "Wi-Fi"
+        "ru": "Wi-Fi 300 Мбит/с",
+        "kk": "Wi-Fi 300 Мбит/с",
+        "en": "Wi-Fi 300 Mbps"
       },
       {
-        "ru": "Фитнес-зал",
-        "kk": "Фитнес-зал",
-        "en": "Fitness hall"
+        "ru": "Доступ 24/7",
+        "kk": "Тәулік бойы қолжетімділік",
+        "en": "24/7 Access"
       },
       {
-        "ru": "Йога-рум",
-        "kk": "Йога-рум",
-        "en": "Yoga room"
-      },
-      {
-        "ru": "Душевые",
-        "kk": "Душ бөлмелері",
-        "en": "Showers"
+        "ru": "Парковка",
+        "kk": "Тұрақ",
+        "en": "Parking"
       }
     ],
     "rating": 4.6
@@ -369,14 +389,14 @@
     "slug": "mantis-creative-space",
     "name": "Mantis Creative Space",
     "description": {
-      "ru": "Семейный креативный коворкинг с зонами для детского развития.",
-      "kk": "Балаларды дамыту аймақтары бар отбасылық креативті коворкинг.",
-      "en": "A family creative coworking space with zones for child development."
+      "ru": "Креативное пространство с быстрым интернетом, зонами для встреч и кафе.",
+      "kk": "Жылдам интернеті, кездесу аймақтары және дәмханасы бар креативті кеңістік.",
+      "en": "A creative space with fast internet, meeting zones, and a cafe."
     },
     "fullDescription": {
-      "ru": "Уникальное место, где можно продуктивно работать, пока дети занимаются в специализированных залах. Идеально для проведения мастер-классов.",
-      "kk": "Балалар арнайы залдарда оқып жатқанда өнімді жұмыс істеуге болатын бірегей орын. Мастер-класстар өткізуге өте ыңғайлы.",
-      "en": "A unique place where you can work productively while children study in specialized rooms. Ideal for master classes."
+      "ru": "Коворкинг-кафе для молодых специалистов. Регулярные митапы и дружелюбное сообщество.",
+      "kk": "Жас мамандарға арналған коворкинг-кафе. Тұрақты митаптар және мейірімді қауымдастық.",
+      "en": "A coworking cafe for young professionals. Regular meetups and a friendly community."
     },
     "address": {
       "ru": "ул. Ауэзова, 5, Алматы",
@@ -389,11 +409,11 @@
       "en": "Almaly district"
     },
     "coordinates": {
-      "lat": 43.252615,
-      "lng": 76.901816
+      "lat": 43.2501,
+      "lng": 76.8965
     },
-    "priceFrom": 3500,
-    "priceMeetingRoom": 2500,
+    "priceFrom": 4000,
+    "priceMeetingRoom": 1000,
     "whatsappNumber": "77009004717",
     "photos": [
       "https://avatars.mds.yandex.net/i?id=cf0c429c51312ae12f00f271d28cd68922c8fd97-4298620-images-thumbs&n=13",
@@ -402,24 +422,14 @@
     ],
     "amenities": [
       {
-        "ru": "Wi-Fi",
-        "kk": "Wi-Fi",
-        "en": "Wi-Fi"
+        "ru": "Wi-Fi 200 Мбит/с",
+        "kk": "Wi-Fi 200 Мбит/с",
+        "en": "Wi-Fi 200 Mbps"
       },
       {
-        "ru": "Детские зоны",
-        "kk": "Балалар аймақтары",
-        "en": "Kids zones"
-      },
-      {
-        "ru": "Кафе",
-        "kk": "Кафе",
-        "en": "Cafe"
-      },
-      {
-        "ru": "Переговорная",
-        "kk": "Келіссөз бөлмесі",
-        "en": "Meeting room"
+        "ru": "Кофе-зона",
+        "kk": "Кофе-аймақ",
+        "en": "Coffee zone"
       }
     ],
     "rating": 4.5
@@ -429,14 +439,14 @@
     "slug": "workspace-727",
     "name": "WorkSpace 727",
     "description": {
-      "ru": "Уютный коворкинг с Лаунж-гарденом и тематическими кабинетами.",
-      "kk": "Лаунж-бағы және тақырыптық кабинеттері бар жайлы коворкинг.",
-      "en": "A cozy coworking space with a Lounge Garden and themed rooms."
+      "ru": "Функциональное пространство с гибкими тарифами в спальном районе.",
+      "kk": "Тұрғын аудандағы икемді тарифтері бар функционалды кеңістік.",
+      "en": "A functional space with flexible rates in a residential area."
     },
     "fullDescription": {
-      "ru": "WorkSpace 727 предлагает работу на свежем воздухе в теплый сезон, персональный душ, бесплатную парковку и кабинеты для психологов.",
-      "kk": "WorkSpace 727 жылы мезгілде таза ауада жұмыс істеуді, жеке душты, тегін тұрақты және психологтарға арналған кабинеттерді ұсынады.",
-      "en": "WorkSpace 727 offers outdoor work in the warm season, a personal shower, free parking, and rooms for psychologists."
+      "ru": "Идеально подходит для жителей западной части города. Доступные цены, парковка и уютная рабочая обстановка.",
+      "kk": "Қаланың батыс бөлігінің тұрғындары үшін өте қолайлы. Қолжетімді бағалар, тұрақ және жайлы жұмыс ортасы.",
+      "en": "Ideal for residents of the western part of the city. Affordable prices, parking, and a cozy working environment."
     },
     "address": {
       "ru": "мкр. Мамыр-4, 49, Алматы",
@@ -449,11 +459,11 @@
       "en": "Auezov district"
     },
     "coordinates": {
-      "lat": 43.210542,
-      "lng": 76.840003
+      "lat": 43.2105,
+      "lng": 76.84
     },
-    "priceFrom": 3000,
-    "priceMeetingRoom": 2500,
+    "priceFrom": 2500,
+    "priceMeetingRoom": 2500 ,
     "whatsappNumber": "77477273030",
     "photos": [
       "/laptop1.jpg",
@@ -462,19 +472,14 @@
     ],
     "amenities": [
       {
-        "ru": "Wi-Fi",
-        "kk": "Wi-Fi",
-        "en": "Wi-Fi"
+        "ru": "Wi-Fi 200 Мбит/с",
+        "kk": "Wi-Fi 200 Мбит/с",
+        "en": "Wi-Fi 200 Mbps"
       },
       {
-        "ru": "Lounge Garden",
-        "kk": "Lounge Garden",
-        "en": "Lounge Garden"
-      },
-      {
-        "ru": "Кабинеты для практик",
-        "kk": "Практика кабинеттері",
-        "en": "Practice rooms"
+        "ru": "Кофе-зона",
+        "kk": "Кофе-аймақ",
+        "en": "Coffee zone"
       },
       {
         "ru": "Парковка",
@@ -489,14 +494,14 @@
     "slug": "capital-coworking",
     "name": "Capital Coworking",
     "description": {
-      "ru": "Комфортные смарт-поинты возле MEGA Center с LED-оснащением.",
-      "kk": "MEGA Center жанындағы LED-жабдықталған жайлы смарт-поинттар.",
-      "en": "Comfortable smart points near MEGA Center with LED equipment."
+      "ru": "Удобно расположен рядом с ТРЦ Mega Center, подходит для фрилансеров.",
+      "kk": "Mega Center ОСО жанында өте қолайлы орналасқан, фрилансерлер үшін жақсы.",
+      "en": "Conveniently located near the Mega Center mall, suitable for freelancers."
     },
     "fullDescription": {
-      "ru": "Capital Coworking идеально подходит для встреч: к вашим услугам кабинки на 1-2 человек, большие залы, телевизоры и удобная мебель мировых брендов.",
-      "kk": "Capital Coworking кездесулер үшін өте қолайлы: 1-2 адамға арналған кабиналар, үлкен залдар, теледидарлар және әлемдік брендтердің жиһаздары бар.",
-      "en": "Capital Coworking is ideal for meetings: cabins for 1-2 people, large halls, TVs, and comfortable furniture from global brands are at your service."
+      "ru": "Просторный коворкинг с видом на горы. Рядом находится MEGA Alma-Ata, что делает локацию крайне удобной для встреч и обедов.",
+      "kk": "Тауға қарайтын көрінісі бар кең коворкинг. Жақын жерде MEGA Alma-Ata орналасқан, бұл орынды кездесулер мен түскі ас үшін өте ыңғайлы етеді.",
+      "en": "A spacious coworking space with a view of the mountains. MEGA Alma-Ata is nearby, making the location extremely convenient for meetings and lunches."
     },
     "address": {
       "ru": "ул. Абиша Кекилбайулы, 34, Алматы",
@@ -509,11 +514,11 @@
       "en": "Bostandyk district"
     },
     "coordinates": {
-      "lat": 43.205189,
-      "lng": 76.890875
+      "lat": 43.205,
+      "lng": 76.89
     },
-    "priceFrom": 4500,
-    "priceMeetingRoom": 4000,
+    "priceFrom": 0,
+    "priceMeetingRoom": 0,
     "whatsappNumber": "77773105777",
     "photos": [
       "https://avatars.mds.yandex.net/i?id=d726c7b070f5d5c7e59fa4c29a4ea4940cbe6e9b-8965182-images-thumbs&n=13",
@@ -522,24 +527,24 @@
     ],
     "amenities": [
       {
-        "ru": "Wi-Fi",
-        "kk": "Wi-Fi",
-        "en": "Wi-Fi"
+        "ru": "Wi-Fi 300 Мбит/с",
+        "kk": "Wi-Fi 300 Мбит/с",
+        "en": "Wi-Fi 300 Mbps"
       },
       {
-        "ru": "Смарт-офисы",
-        "kk": "Смарт-кеңселер",
-        "en": "Smart offices"
+        "ru": "Доступ 24/7",
+        "kk": "Тәулік бойы қолжетімділік",
+        "en": "24/7 Access"
       },
       {
-        "ru": "Оборудование для ВКС",
-        "kk": "Бейнеконференция жабдықтары",
-        "en": "Video conferencing eq."
+        "ru": "Парковка",
+        "kk": "Тұрақ",
+        "en": "Parking"
       },
       {
-        "ru": "Служба ресепшн",
-        "kk": "Ресепшн қызметі",
-        "en": "Reception service"
+        "ru": "Переговорная",
+        "kk": "Келіссөз бөлмесі",
+        "en": "Meeting room"
       }
     ],
     "rating": 4.7
