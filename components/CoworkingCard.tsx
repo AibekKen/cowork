@@ -42,17 +42,22 @@ export default function CoworkingCard({ coworking }: CoworkingCardProps) {
           </Link>
         </div>
         
-        <div className="flex items-center justify-between mb-4">
-          <p className="text-gray-500 text-sm flex items-center gap-1.5 line-clamp-1">
-            <MapPin size={14} className="text-gray-400 shrink-0" />
-            {getLocalized(coworking.district)}
-            {coworking.distance !== undefined && (
-              <span className="text-emerald-600 font-medium ml-1">
-                • {coworking.distance < 1 ? `${Math.round(coworking.distance * 1000)} м` : `${coworking.distance.toFixed(1)} км`}
-              </span>
-            )}
-          </p>
-          <div className="flex items-center gap-1.5">
+        <div className="flex items-start justify-between mb-4 gap-2">
+          <div className="flex flex-col gap-0.5 overflow-hidden">
+            <p className="text-gray-600 text-sm flex items-center gap-1.5 line-clamp-1">
+              <MapPin size={14} className="text-gray-400 shrink-0" />
+              {getLocalized(coworking.district)}
+              {coworking.distance !== undefined && (
+                <span className="text-emerald-600 font-medium ml-1">
+                  • {coworking.distance < 1 ? `${Math.round(coworking.distance * 1000)} м` : `${coworking.distance.toFixed(1)} км`}
+                </span>
+              )}
+            </p>
+            <p className="text-gray-400 text-xs pl-5 line-clamp-1">
+              {getLocalized(coworking.address)}
+            </p>
+          </div>
+          <div className="flex items-center gap-1.5 shrink-0 pt-0.5">
             <a 
               href={`https://2gis.kz/almaty/search/${coworking.coordinates.lat},${coworking.coordinates.lng}`}
               target="_blank" rel="noopener noreferrer"
