@@ -1,6 +1,7 @@
 import { MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import Script from 'next/script';
 
 export default function Footer() {
   const t = useTranslations('Footer');
@@ -37,9 +38,39 @@ export default function Footer() {
           <p className="max-w-3xl mb-4 text-xs text-gray-400">
             {t('disclaimer')}
           </p>
-          <p className="text-sm">© {new Date().getFullYear()} Kenzcore Space. {t('rights')}</p>
+          <div className="flex flex-col items-center gap-4 w-full mt-2">
+            <p className="text-sm">© {new Date().getFullYear()} Kenzcore Space. {t('rights')}</p>
+            
+            {/* ZERO.kz */}
+            <span id="_zero_75625">
+              <noscript>
+                <a href="https://zero.kz/?s=75625" target="_blank" rel="noopener noreferrer">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://c.zero.kz/z.png?u=75625" width="88" height="31" alt="ZERO.kz" />
+                </a>
+              </noscript>
+            </span>
+            {/* End ZERO.kz */}
+          </div>
         </div>
       </div>
+      
+      <Script id="zero-kz" strategy="afterInteractive" dangerouslySetInnerHTML={{
+        __html: `
+          var _zero_kz_ = _zero_kz_ || [];
+          _zero_kz_.push(['id', 75625]);
+          _zero_kz_.push(['type', 1]);
+
+          (function () {
+            var a = document.getElementsByTagName('script')[0],
+            s = document.createElement('script');
+            s.async = true;
+            s.src = (document.location.protocol == 'http:' ? 'http:' : 'https:') +
+              '//c.zero.kz/z.js';
+            a.parentNode.insertBefore(s, a);
+          })();
+        `
+      }} />
     </footer>
   );
 }
