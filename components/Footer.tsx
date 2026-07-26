@@ -24,7 +24,7 @@ export default function Footer() {
             <h4 className="font-bold text-gray-900 mb-4">{t('contacts')}</h4>
             <ul className="space-y-2">
               <li className="text-gray-500">Алматы, Казахстан</li>
-              <li><a href="mailto:hello@kenzcore.com" className="text-emerald-500 hover:underline">hello@kenzcore.com</a></li>
+              <li><a href="mailto:kenzcorestudio@gmail.com" className="text-emerald-500 hover:underline">kenzcorestudio@gmail.com</a></li>
             </ul>
           </div>
         </div>

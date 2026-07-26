@@ -31,7 +31,10 @@
     "found": "Found:",
     "grid": "Grid",
     "map": "Map",
-    "empty": "Nothing was found for your request. Try changing the filters."
+    "empty": "Nothing found for your request. Try changing the filters.",
+    "nearby": "Nearby",
+    "locating": "Locating...",
+    "geo_error": "Geolocation access error"
   },
   "Card": {
     "amenities_more": "+{count} amenities",
@@ -60,6 +63,6 @@
     "wa_alert": "The specified prices are for informational purposes. The final cost and availability of free spaces are confirmed by the coworking itself.",
     "open_2gis": "Open in 2GIS",
     "open_google": "Route on Google Maps",
-    "wa_message": "Hello! I'm interested in the coworking {name}. Could you tell me if there are any available spaces for today and if the prices are up to date?"
+    "wa_message": "Hello! I am interested in the {name} coworking. Could you tell me if there are any free spots for today and if the prices are up to date?"
   }
 }

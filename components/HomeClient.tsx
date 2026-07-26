@@ -6,6 +6,7 @@ import { LayoutGrid, Map as MapIcon } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Coworking, LocalizedString } from '@/types/coworking';
 import CoworkingCard from './CoworkingCard';
+import { calculateDistance } from '@/utils/distance';
 
 // Dynamically import map to avoid SSR issues with Leaflet
 const MapComponent = dynamic(() => import('./MapComponent'), { 
@@ -39,16 +40,77 @@ export default function HomeClient({ initialCoworkings, locale }: HomeClientProp
   const [district, setDistrict] = useState(DISTRICTS[0]);
   const [has247, setHas247] = useState(false);
   const [hasMeetingRoom, setHasMeetingRoom] = useState(false);
+  
+  const [userLocation, setUserLocation] = useState<{lat: number, lng: number} | null>(null);
+  const [isLocating, setIsLocating] = useState(false);
+  const [showNearby, setShowNearby] = useState(false);
+  const [geoError, setGeoError] = useState<string | null>(null);
+  const [hasRequestedMapLocation, setHasRequestedMapLocation] = useState(false);
+
+  const requestGeolocation = (onSuccess?: () => void, onError?: () => void) => {
+    setIsLocating(true);
+    setGeoError(null);
+    if ('geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          setUserLocation({ lat: pos.coords.latitude, lng: pos.coords.longitude });
+          setIsLocating(false);
+          if (onSuccess) onSuccess();
+        },
+        (err) => {
+          console.error(err);
+          setGeoError(t('geo_error'));
+          setIsLocating(false);
+          if (onError) onError();
+        },
+        { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
+      );
+    } else {
+      setGeoError(t('geo_error'));
+      setIsLocating(false);
+      if (onError) onError();
+    }
+  };
+
+  const toggleNearby = () => {
+    if (showNearby) {
+      setShowNearby(false);
+      return;
+    }
+
+    if (!userLocation) {
+      requestGeolocation(() => setShowNearby(true));
+    } else {
+      setShowNearby(true);
+    }
+  };
+
+  const handleViewChange = (newView: 'grid' | 'map') => {
+    setView(newView);
+    if (newView === 'map' && !userLocation && !hasRequestedMapLocation && !isLocating) {
+      setHasRequestedMapLocation(true);
+      requestGeolocation();
+    }
+  };
 
   const filteredCoworkings = useMemo(() => {
-    return initialCoworkings.filter(c => {
+    let result = initialCoworkings.filter(c => {
       const cDistrict = getLocalized(c.district, locale);
       if (district !== DISTRICTS[0] && cDistrict !== district) return false;
       if (has247 && !c.amenities.some(a => getLocalized(a, locale).includes("24/7"))) return false;
       if (hasMeetingRoom && c.priceMeetingRoom === 0) return false;
       return true;
-    });
-  }, [initialCoworkings, district, has247, hasMeetingRoom, locale]);
+    }).map(c => ({
+      ...c,
+      distance: userLocation ? calculateDistance(userLocation.lat, userLocation.lng, c.coordinates.lat, c.coordinates.lng) : undefined
+    }));
+
+    if (showNearby && userLocation) {
+      result.sort((a, b) => (a.distance || 0) - (b.distance || 0));
+    }
+
+    return result;
+  }, [initialCoworkings, district, has247, hasMeetingRoom, locale, userLocation, showNearby]);
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -72,17 +134,29 @@ export default function HomeClient({ initialCoworkings, locale }: HomeClientProp
             <input type="checkbox" checked={hasMeetingRoom} onChange={(e) => setHasMeetingRoom(e.target.checked)} className="rounded text-emerald-500 focus:ring-emerald-500 bg-white border-gray-300 w-4 h-4 cursor-pointer" />
             <span className="text-sm font-medium text-gray-700">Переговорная</span>
           </label>
+          
+          <button 
+            onClick={toggleNearby}
+            className={`flex items-center gap-2 px-3 py-2.5 rounded-xl text-sm font-medium transition-colors border ${showNearby ? 'bg-emerald-50 border-emerald-200 text-emerald-700' : 'bg-white border-gray-200 text-gray-700 hover:bg-gray-50'}`}
+          >
+            {isLocating ? (
+              <span className="animate-pulse">{t('locating')}</span>
+            ) : (
+              <>📍 {t('nearby')}</>
+            )}
+          </button>
+          {geoError && <span className="text-red-500 text-xs self-center">{geoError}</span>}
         </div>
 
         <div className="flex items-center bg-gray-100 rounded-lg p-1 w-full md:w-auto mt-4 md:mt-0">
           <button 
-            onClick={() => setView('grid')}
+            onClick={() => handleViewChange('grid')}
             className={`flex-1 md:flex-none flex items-center justify-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-colors ${view === 'grid' ? 'bg-white shadow-sm text-emerald-600' : 'text-gray-500 hover:text-gray-700'}`}
           >
             <LayoutGrid size={16} /> {t('grid')}
           </button>
           <button 
-            onClick={() => setView('map')}
+            onClick={() => handleViewChange('map')}
             className={`flex-1 md:flex-none flex items-center justify-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-colors ${view === 'map' ? 'bg-white shadow-sm text-emerald-600' : 'text-gray-500 hover:text-gray-700'}`}
           >
             <MapIcon size={16} /> {t('map')}
@@ -108,7 +182,10 @@ export default function HomeClient({ initialCoworkings, locale }: HomeClientProp
         </div>
       ) : (
         <div className="h-[600px] w-full rounded-2xl overflow-hidden shadow-sm border border-gray-200">
-          <MapComponent coworkings={filteredCoworkings} />
+          <MapComponent 
+            coworkings={filteredCoworkings} 
+            userLocation={userLocation}
+          />
         </div>
       )}
     </div>

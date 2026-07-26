@@ -39,9 +39,6 @@ export default function Header() {
               </button>
             ))}
           </div>
-          <a href="mailto:hello@kenzcore.com" className="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2 rounded-full font-medium transition-colors shadow-sm shadow-emerald-500/20">
-            {t('contacts')}
-          </a>
         </div>
       </div>
     </header>

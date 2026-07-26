@@ -6,7 +6,7 @@ import { Coworking, LocalizedString } from '@/types/coworking';
 import WhatsAppButton from './WhatsAppButton';
 
 interface CoworkingCardProps {
-  coworking: Coworking;
+  coworking: Coworking & { distance?: number };
 }
 
 export default function CoworkingCard({ coworking }: CoworkingCardProps) {
@@ -46,6 +46,11 @@ export default function CoworkingCard({ coworking }: CoworkingCardProps) {
           <p className="text-gray-500 text-sm flex items-center gap-1.5 line-clamp-1">
             <MapPin size={14} className="text-gray-400 shrink-0" />
             {getLocalized(coworking.district)}
+            {coworking.distance !== undefined && (
+              <span className="text-emerald-600 font-medium ml-1">
+                • {coworking.distance < 1 ? `${Math.round(coworking.distance * 1000)} м` : `${coworking.distance.toFixed(1)} км`}
+              </span>
+            )}
           </p>
           <div className="flex items-center gap-1.5">
             <a 

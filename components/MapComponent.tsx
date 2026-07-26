@@ -1,8 +1,9 @@
 'use client';
 
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { useEffect } from 'react';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import { Icon } from 'leaflet';
+import { Icon, divIcon, latLngBounds } from 'leaflet';
 import { useTranslations } from 'next-intl';
 import { Coworking, LocalizedString } from '@/types/coworking';
 import Link from 'next/link';
@@ -19,15 +20,50 @@ const customIcon = new Icon({
   shadowSize: [41, 41]
 });
 
+const userIcon = divIcon({
+  className: 'custom-user-marker',
+  html: `
+    <div class="relative flex items-center justify-center w-full h-full">
+      <div class="absolute w-8 h-8 bg-blue-500 rounded-full opacity-30 animate-ping"></div>
+      <div class="relative w-4 h-4 bg-blue-600 border-2 border-white rounded-full shadow-md"></div>
+    </div>
+  `,
+  iconSize: [32, 32],
+  iconAnchor: [16, 16],
+  popupAnchor: [0, -16]
+});
+
 interface MapComponentProps {
   coworkings: Coworking[];
+  userLocation?: {lat: number, lng: number} | null;
   center?: [number, number];
   zoom?: number;
   className?: string;
 }
 
+function MapUpdater({ coworkings, userLocation }: { coworkings: Coworking[], userLocation?: {lat: number, lng: number} | null }) {
+  const map = useMap();
+  useEffect(() => {
+    if (coworkings.length === 0 && !userLocation) return;
+    
+    const bounds = latLngBounds([]);
+    if (userLocation) {
+      bounds.extend([userLocation.lat, userLocation.lng]);
+    }
+    coworkings.forEach(c => {
+      bounds.extend([c.coordinates.lat, c.coordinates.lng]);
+    });
+    
+    if (bounds.isValid()) {
+      map.flyToBounds(bounds, { padding: [50, 50], duration: 1.5, maxZoom: 14 });
+    }
+  }, [coworkings, userLocation, map]);
+  return null;
+}
+
 export default function MapComponent({ 
   coworkings, 
+  userLocation,
   center = [43.2389, 76.8897], // Default Almaty center
   zoom = 12,
   className = "w-full h-full min-h-[400px] rounded-2xl z-0"
@@ -35,18 +71,33 @@ export default function MapComponent({
   const t = useTranslations('Card');
   // fallback if needed
   const getLocalized = (str: LocalizedString) => str['ru'] || str.ru; 
+  
+  const mapCenter = userLocation ? [userLocation.lat, userLocation.lng] as [number, number] : center;
+  const mapZoom = userLocation ? 13 : zoom;
+
   return (
     <MapContainer 
-      center={center} 
-      zoom={zoom} 
+      center={mapCenter} 
+      zoom={mapZoom} 
       scrollWheelZoom={false}
       className={className}
     >
+      <MapUpdater coworkings={coworkings} userLocation={userLocation} />
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       
+      {userLocation && (
+        <Marker 
+          position={[userLocation.lat, userLocation.lng]}
+          icon={userIcon}
+          zIndexOffset={1000}
+        >
+          <Popup>Вы здесь</Popup>
+        </Marker>
+      )}
+
       {coworkings.map((coworking) => (
         <Marker 
           key={coworking.id} 
