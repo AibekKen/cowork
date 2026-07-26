@@ -1,0 +1,477 @@
+[
+  {
+    "id": "1",
+    "slug": "smart-point-almaty",
+    "name": "SmArt.Point",
+    "description": {
+      "ru": "Крупнейший коворкинг в Центральной Азии с развитой инфраструктурой для IT-компаний и фрилансеров.",
+      "kk": "IT-компаниялар мен фрилансерлерге арналған дамыған инфрақұрылымы бар Орталық Азиядағы ең ірі коворкинг.",
+      "en": "The largest coworking space in Central Asia with developed infrastructure for IT companies and freelancers."
+    },
+    "fullDescription": {
+      "ru": "SmArt.Point — это не просто рабочее пространство, это экосистема для инноваторов и стартапов. Мы предлагаем круглосуточный доступ, высокоскоростной интернет, современные переговорные комнаты и зоны отдыха, включая кафе и игровые зоны.",
+      "kk": "SmArt.Point — бұл жай ғана жұмыс кеңістігі емес, ол инноваторлар мен стартаптарға арналған экожүйе. Біз тәулік бойы қолжетімділікті, жоғары жылдамдықты интернетті, заманауи келіссөз бөлмелерін және демалыс аймақтарын ұсынамыз.",
+      "en": "SmArt.Point is not just a workspace; it is an ecosystem for innovators and startups. We offer 24/7 access, high-speed internet, modern meeting rooms, and recreation areas, including cafes and gaming zones."
+    },
+    "address": {
+      "ru": "ул. Байзакова, 280, Алматы",
+      "kk": "Байзақов көш., 280, Алматы",
+      "en": "280 Baizakov St, Almaty"
+    },
+    "district": {
+      "ru": "Бостандыкский район",
+      "kk": "Бостандық ауданы",
+      "en": "Bostandyk district"
+    },
+    "coordinates": {
+      "lat": 43.2383,
+      "lng": 76.9149
+    },
+    "priceFrom": 5000,
+    "priceMeetingRoom": 4000,
+    "whatsappNumber": "77001112233",
+    "photos": [
+      "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1556761175-5973dc0f32b7?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      {"ru": "Wi-Fi 500 Мбит/с", "kk": "Wi-Fi 500 Мбит/с", "en": "Wi-Fi 500 Mbps"},
+      {"ru": "Доступ 24/7", "kk": "Тәулік бойы қолжетімділік", "en": "24/7 Access"},
+      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"},
+      {"ru": "Парковка", "kk": "Тұрақ", "en": "Parking"},
+      {"ru": "Зум-кабины", "kk": "Зум-кабиналар", "en": "Zoom booths"},
+      {"ru": "Генератор/ИБП", "kk": "Генератор/ҮҚК", "en": "Generator/UPS"}
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "2",
+    "slug": "most-it-hub",
+    "name": "MOST IT Hub",
+    "description": {
+      "ru": "Современное пространство для IT-энтузиастов и креативных команд в самом сердце города.",
+      "kk": "Қаланың қақ ортасындағы IT-энтузиастар мен креативті командаларға арналған заманауи кеңістік.",
+      "en": "A modern space for IT enthusiasts and creative teams in the heart of the city."
+    },
+    "fullDescription": {
+      "ru": "MOST IT Hub предоставляет идеальные условия для продуктивной работы. В вашем распоряжении комфортные рабочие места, переговорные комнаты, зона для мероприятий и нетворкинга.",
+      "kk": "MOST IT Hub өнімді жұмыс істеу үшін тамаша жағдай жасайды. Сіздің иелігіңізде жайлы жұмыс орындары, келіссөз бөлмелері, іс-шаралар мен нетворкингке арналған аймақ бар.",
+      "en": "MOST IT Hub provides ideal conditions for productive work. Comfortable workplaces, meeting rooms, and an area for events and networking are at your disposal."
+    },
+    "address": {
+      "ru": "пр. Достык, 16, Алматы",
+      "kk": "Достық даңғылы, 16, Алматы",
+      "en": "16 Dostyk Ave, Almaty"
+    },
+    "district": {
+      "ru": "Медеуский район",
+      "kk": "Медеу ауданы",
+      "en": "Medeu district"
+    },
+    "coordinates": {
+      "lat": 43.2581,
+      "lng": 76.9535
+    },
+    "priceFrom": 6000,
+    "priceMeetingRoom": 5000,
+    "whatsappNumber": "77001112233",
+    "photos": [
+      "https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      {"ru": "Wi-Fi 1 Гбит/с", "kk": "Wi-Fi 1 Гбит/с", "en": "Wi-Fi 1 Gbps"},
+      {"ru": "Доступ 24/7", "kk": "Тәулік бойы қолжетімділік", "en": "24/7 Access"},
+      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"},
+      {"ru": "Переговорная", "kk": "Келіссөз бөлмесі", "en": "Meeting room"},
+      {"ru": "Генератор/ИБП", "kk": "Генератор/ҮҚК", "en": "Generator/UPS"}
+    ],
+    "rating": 4.9
+  },
+  {
+    "id": "3",
+    "slug": "workspace-almaty",
+    "name": "WorkSpace",
+    "description": {
+      "ru": "Уютный коворкинг с гибкими тарифами и отличной транспортной доступностью.",
+      "kk": "Икемді тарифтері және көлік қолжетімділігі жақсы жайлы коворкинг.",
+      "en": "A cozy coworking space with flexible rates and excellent transport accessibility."
+    },
+    "fullDescription": {
+      "ru": "WorkSpace — отличный выбор для фрилансеров и небольших команд. Светлые офисы, эргономичная мебель и дружелюбная атмосфера помогут вам сосредоточиться на главном.",
+      "kk": "WorkSpace — фрилансерлер мен шағын командалар үшін тамаша таңдау. Жарық кеңселер, эргономикалық жиһаз және мейірімді атмосфера сізге назарыңызды шоғырландыруға көмектеседі.",
+      "en": "WorkSpace is an excellent choice for freelancers and small teams. Bright offices, ergonomic furniture, and a friendly atmosphere will help you focus on what matters most."
+    },
+    "address": {
+      "ru": "ул. Абая, 150/230, Алматы",
+      "kk": "Абай көш., 150/230, Алматы",
+      "en": "150/230 Abai St, Almaty"
+    },
+    "district": {
+      "ru": "Алмалинский район",
+      "kk": "Алмалы ауданы",
+      "en": "Almaly district"
+    },
+    "coordinates": {
+      "lat": 43.2403,
+      "lng": 76.8920
+    },
+    "priceFrom": 3500,
+    "priceMeetingRoom": 3000,
+    "whatsappNumber": "77001112233",
+    "photos": [
+      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      {"ru": "Wi-Fi 300 Мбит/с", "kk": "Wi-Fi 300 Мбит/с", "en": "Wi-Fi 300 Mbps"},
+      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"},
+      {"ru": "Парковка", "kk": "Тұрақ", "en": "Parking"},
+      {"ru": "Зум-кабины", "kk": "Зум-кабиналар", "en": "Zoom booths"}
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": "4",
+    "slug": "city-hub",
+    "name": "City Hub",
+    "description": {
+      "ru": "Уютное пространство в «Золотом квадрате» для мероприятий и продуктивной работы.",
+      "kk": "«Алтын шаршыдағы» іс-шаралар мен өнімді жұмысқа арналған жайлы кеңістік.",
+      "en": "A cozy space in the 'Golden Square' for events and productive work."
+    },
+    "fullDescription": {
+      "ru": "City Hub предлагает смарт-офисы, кухню, кафе и возможность проведения мероприятий и фотосессий в центре города.",
+      "kk": "City Hub смарт-кеңселерді, асүйді, дәмхананы және қала орталығында іс-шаралар мен фотосессиялар өткізу мүмкіндігін ұсынады.",
+      "en": "City Hub offers smart offices, a kitchen, a cafe, and the ability to host events and photoshoots in the city center."
+    },
+    "address": {
+      "ru": "ул. Толе би, 55, Алматы",
+      "kk": "Төле би көш., 55, Алматы",
+      "en": "55 Tole Bi St, Almaty"
+    },
+    "district": {
+      "ru": "Алмалинский район",
+      "kk": "Алмалы ауданы",
+      "en": "Almaly district"
+    },
+    "coordinates": {
+      "lat": 43.2541,
+      "lng": 76.9405
+    },
+    "priceFrom": 5500,
+    "priceMeetingRoom": 4500,
+    "whatsappNumber": "77001112233",
+    "photos": [
+      "https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      {"ru": "Wi-Fi 500 Мбит/с", "kk": "Wi-Fi 500 Мбит/с", "en": "Wi-Fi 500 Mbps"},
+      {"ru": "Доступ 24/7", "kk": "Тәулік бойы қолжетімділік", "en": "24/7 Access"},
+      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"},
+      {"ru": "Парковка", "kk": "Тұрақ", "en": "Parking"},
+      {"ru": "Переговорная", "kk": "Келіссөз бөлмесі", "en": "Meeting room"}
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "5",
+    "slug": "rezhim-raboty",
+    "name": "Режим Работы",
+    "description": {
+      "ru": "Стильное и вдохновляющее пространство для творческих профессий.",
+      "kk": "Шығармашылық мамандықтарға арналған стильді және шабыттандыратын кеңістік.",
+      "en": "A stylish and inspiring space for creative professions."
+    },
+    "fullDescription": {
+      "ru": "Коворкинг 'Режим Работы' создан для дизайнеров, маркетологов и креативных агентств. Нестандартный интерьер, зоны для брейншторминга и регулярные мастер-классы.",
+      "kk": "'Режим Работы' коворкингі дизайнерлерге, маркетологтарға және креативті агенттіктерге арналған. Ерекше интерьер, брейнштормингке арналған аймақтар.",
+      "en": "The 'Rezhim Raboty' coworking space is designed for designers, marketers, and creative agencies. Unconventional interior, brainstorming zones, and regular master classes."
+    },
+    "address": {
+      "ru": "ул. Розыбакиева, 247А, Алматы",
+      "kk": "Розыбакиев көш., 247А, Алматы",
+      "en": "247A Rozybakiyev St, Almaty"
+    },
+    "district": {
+      "ru": "Бостандыкский район",
+      "kk": "Бостандық ауданы",
+      "en": "Bostandyk district"
+    },
+    "coordinates": {
+      "lat": 43.2104,
+      "lng": 76.8953
+    },
+    "priceFrom": 4000,
+    "priceMeetingRoom": 3500,
+    "whatsappNumber": "77001112233",
+    "photos": [
+      "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      {"ru": "Wi-Fi 300 Мбит/с", "kk": "Wi-Fi 300 Мбит/с", "en": "Wi-Fi 300 Mbps"},
+      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"},
+      {"ru": "Парковка", "kk": "Тұрақ", "en": "Parking"}
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "6",
+    "slug": "fifty-four",
+    "name": "FIFTY FOUR",
+    "description": {
+      "ru": "Бизнес-пространство в светлых тонах со стильным интерьером.",
+      "kk": "Стильді интерьері бар ашық түсті бизнес-кеңістік.",
+      "en": "A business space in light tones with a stylish interior."
+    },
+    "fullDescription": {
+      "ru": "FIFTY FOUR - это премиальный коворкинг с work-café, современными переговорными комнатами и уникальной зоной отдыха.",
+      "kk": "FIFTY FOUR - бұл work-café, заманауи келіссөз бөлмелері және бірегей демалыс аймағы бар премиум коворкинг.",
+      "en": "FIFTY FOUR is a premium coworking space with a work-café, modern meeting rooms, and a unique relaxation area."
+    },
+    "address": {
+      "ru": "ул. Маншук Маметовой, 54, Алматы",
+      "kk": "Мәншүк Мәметова көш., 54, Алматы",
+      "en": "54 Manshuk Mametova St, Almaty"
+    },
+    "district": {
+      "ru": "Алмалинский район",
+      "kk": "Алмалы ауданы",
+      "en": "Almaly district"
+    },
+    "coordinates": {
+      "lat": 43.2642,
+      "lng": 76.9385
+    },
+    "priceFrom": 6500,
+    "priceMeetingRoom": 5500,
+    "whatsappNumber": "77001112233",
+    "photos": [
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      {"ru": "Wi-Fi 500 Мбит/с", "kk": "Wi-Fi 500 Мбит/с", "en": "Wi-Fi 500 Mbps"},
+      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"},
+      {"ru": "Переговорная", "kk": "Келіссөз бөлмесі", "en": "Meeting room"},
+      {"ru": "Доступ 24/7", "kk": "Тәулік бойы қолжетімділік", "en": "24/7 Access"},
+      {"ru": "Зум-кабины", "kk": "Зум-кабиналар", "en": "Zoom booths"}
+    ],
+    "rating": 4.9
+  },
+  {
+    "id": "7",
+    "slug": "sail-coworking",
+    "name": "Sail Coworking",
+    "description": {
+      "ru": "Офисы в стиле high-tech с круглосуточным доступом.",
+      "kk": "Тәулік бойы қолжетімділігі бар high-tech стиліндегі кеңселер.",
+      "en": "High-tech style offices with 24/7 access."
+    },
+    "fullDescription": {
+      "ru": "Sail Coworking предоставляет услуги ресепшена, IT-поддержку и профессионально оборудованные конференц-залы.",
+      "kk": "Sail Coworking ресепшн қызметтерін, IT-қолдауды және кәсіби жабдықталған конференц-залдарды ұсынады.",
+      "en": "Sail Coworking provides reception services, IT support, and professionally equipped conference rooms."
+    },
+    "address": {
+      "ru": "пр. Назарбаева, 193, Алматы",
+      "kk": "Назарбаев даңғылы, 193, Алматы",
+      "en": "193 Nazarbayev Ave, Almaty"
+    },
+    "district": {
+      "ru": "Бостандыкский район",
+      "kk": "Бостандық ауданы",
+      "en": "Bostandyk district"
+    },
+    "coordinates": {
+      "lat": 43.2425,
+      "lng": 76.9463
+    },
+    "priceFrom": 5000,
+    "priceMeetingRoom": 4000,
+    "whatsappNumber": "77001112233",
+    "photos": [
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      {"ru": "Wi-Fi 1 Гбит/с", "kk": "Wi-Fi 1 Гбит/с", "en": "Wi-Fi 1 Gbps"},
+      {"ru": "Доступ 24/7", "kk": "Тәулік бойы қолжетімділік", "en": "24/7 Access"},
+      {"ru": "Переговорная", "kk": "Келіссөз бөлмесі", "en": "Meeting room"},
+      {"ru": "Охрана", "kk": "Күзет", "en": "Security"},
+      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"}
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "8",
+    "slug": "jas-coworking",
+    "name": "Jas Coworking",
+    "description": {
+      "ru": "Современное пространство, подходящее как для индивидуальной работы, так и для команд.",
+      "kk": "Жеке жұмыс істеуге де, командаларға да қолайлы заманауи кеңістік.",
+      "en": "A modern space suitable for both individual work and teams."
+    },
+    "fullDescription": {
+      "ru": "Стильный коворкинг на Сейфуллина с большими окнами, эргономичными стульями и свежим кофе.",
+      "kk": "Сейфуллин көшесіндегі үлкен терезелері, эргономикалық орындықтары және жаңа піскен кофесі бар стильді коворкинг.",
+      "en": "A stylish coworking space on Seifullin with large windows, ergonomic chairs, and fresh coffee."
+    },
+    "address": {
+      "ru": "пр. Сейфуллина, 609, Алматы",
+      "kk": "Сейфуллин даңғылы, 609, Алматы",
+      "en": "609 Seifullin Ave, Almaty"
+    },
+    "district": {
+      "ru": "Алмалинский район",
+      "kk": "Алмалы ауданы",
+      "en": "Almaly district"
+    },
+    "coordinates": {
+      "lat": 43.2405,
+      "lng": 76.9320
+    },
+    "priceFrom": 4500,
+    "priceMeetingRoom": 3500,
+    "whatsappNumber": "77001112233",
+    "photos": [
+      "https://images.unsplash.com/photo-1556761175-5973dc0f32b7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      {"ru": "Wi-Fi 300 Мбит/с", "kk": "Wi-Fi 300 Мбит/с", "en": "Wi-Fi 300 Mbps"},
+      {"ru": "Доступ 24/7", "kk": "Тәулік бойы қолжетімділік", "en": "24/7 Access"},
+      {"ru": "Парковка", "kk": "Тұрақ", "en": "Parking"}
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "9",
+    "slug": "mantis-creative-space",
+    "name": "Mantis Creative Space",
+    "description": {
+      "ru": "Креативное пространство с быстрым интернетом, зонами для встреч и кафе.",
+      "kk": "Жылдам интернеті, кездесу аймақтары және дәмханасы бар креативті кеңістік.",
+      "en": "A creative space with fast internet, meeting zones, and a cafe."
+    },
+    "fullDescription": {
+      "ru": "Коворкинг-кафе для молодых специалистов. Регулярные митапы и дружелюбное сообщество.",
+      "kk": "Жас мамандарға арналған коворкинг-кафе. Тұрақты митаптар және мейірімді қауымдастық.",
+      "en": "A coworking cafe for young professionals. Regular meetups and a friendly community."
+    },
+    "address": {
+      "ru": "ул. Ауэзова, 5, Алматы",
+      "kk": "Әуезов көш., 5, Алматы",
+      "en": "5 Auezov St, Almaty"
+    },
+    "district": {
+      "ru": "Алмалинский район",
+      "kk": "Алмалы ауданы",
+      "en": "Almaly district"
+    },
+    "coordinates": {
+      "lat": 43.2501,
+      "lng": 76.8965
+    },
+    "priceFrom": 3500,
+    "priceMeetingRoom": 2500,
+    "whatsappNumber": "77001112233",
+    "photos": [
+      "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      {"ru": "Wi-Fi 200 Мбит/с", "kk": "Wi-Fi 200 Мбит/с", "en": "Wi-Fi 200 Mbps"},
+      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"}
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": "10",
+    "slug": "workspace-727",
+    "name": "WorkSpace 727",
+    "description": {
+      "ru": "Функциональное пространство с гибкими тарифами в спальном районе.",
+      "kk": "Тұрғын аудандағы икемді тарифтері бар функционалды кеңістік.",
+      "en": "A functional space with flexible rates in a residential area."
+    },
+    "fullDescription": {
+      "ru": "Идеально подходит для жителей западной части города. Доступные цены, парковка и уютная рабочая обстановка.",
+      "kk": "Қаланың батыс бөлігінің тұрғындары үшін өте қолайлы. Қолжетімді бағалар, тұрақ және жайлы жұмыс ортасы.",
+      "en": "Ideal for residents of the western part of the city. Affordable prices, parking, and a cozy working environment."
+    },
+    "address": {
+      "ru": "мкр. Мамыр-4, 49, Алматы",
+      "kk": "Мамыр-4 ықшамауданы, 49, Алматы",
+      "en": "Mamyr-4 microdistrict, 49, Almaty"
+    },
+    "district": {
+      "ru": "Ауэзовский район",
+      "kk": "Әуезов ауданы",
+      "en": "Auezov district"
+    },
+    "coordinates": {
+      "lat": 43.2105,
+      "lng": 76.8400
+    },
+    "priceFrom": 3000,
+    "priceMeetingRoom": 2500,
+    "whatsappNumber": "77001112233",
+    "photos": [
+      "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      {"ru": "Wi-Fi 200 Мбит/с", "kk": "Wi-Fi 200 Мбит/с", "en": "Wi-Fi 200 Mbps"},
+      {"ru": "Кофе-зона", "kk": "Кофе-аймақ", "en": "Coffee zone"},
+      {"ru": "Парковка", "kk": "Тұрақ", "en": "Parking"}
+    ],
+    "rating": 4.3
+  },
+  {
+    "id": "11",
+    "slug": "capital-coworking",
+    "name": "Capital Coworking",
+    "description": {
+      "ru": "Удобно расположен рядом с ТРЦ Mega Center, подходит для фрилансеров.",
+      "kk": "Mega Center ОСО жанында өте қолайлы орналасқан, фрилансерлер үшін жақсы.",
+      "en": "Conveniently located near the Mega Center mall, suitable for freelancers."
+    },
+    "fullDescription": {
+      "ru": "Просторный коворкинг с видом на горы. Рядом находится MEGA Alma-Ata, что делает локацию крайне удобной для встреч и обедов.",
+      "kk": "Тауға қарайтын көрінісі бар кең коворкинг. Жақын жерде MEGA Alma-Ata орналасқан, бұл орынды кездесулер мен түскі ас үшін өте ыңғайлы етеді.",
+      "en": "A spacious coworking space with a view of the mountains. MEGA Alma-Ata is nearby, making the location extremely convenient for meetings and lunches."
+    },
+    "address": {
+      "ru": "ул. Абиша Кекилбайулы, 34, Алматы",
+      "kk": "Әбіш Кекілбайұлы көш., 34, Алматы",
+      "en": "34 Abish Kekilbayuly St, Almaty"
+    },
+    "district": {
+      "ru": "Бостандыкский район",
+      "kk": "Бостандық ауданы",
+      "en": "Bostandyk district"
+    },
+    "coordinates": {
+      "lat": 43.2050,
+      "lng": 76.8900
+    },
+    "priceFrom": 4500,
+    "priceMeetingRoom": 4000,
+    "whatsappNumber": "77001112233",
+    "photos": [
+      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      {"ru": "Wi-Fi 300 Мбит/с", "kk": "Wi-Fi 300 Мбит/с", "en": "Wi-Fi 300 Mbps"},
+      {"ru": "Доступ 24/7", "kk": "Тәулік бойы қолжетімділік", "en": "24/7 Access"},
+      {"ru": "Парковка", "kk": "Тұрақ", "en": "Parking"},
+      {"ru": "Переговорная", "kk": "Келіссөз бөлмесі", "en": "Meeting room"}
+    ],
+    "rating": 4.7
+  }
+]

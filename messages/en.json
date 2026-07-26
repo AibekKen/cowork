@@ -1,0 +1,65 @@
+{
+  "Header": {
+    "coworkings": "Coworkings",
+    "map": "Map",
+    "contacts": "Contacts"
+  },
+  "Footer": {
+    "desc": "Aggregator of the best coworking spaces and meeting rooms in Almaty. Compare prices and book directly.",
+    "nav": "Navigation",
+    "nav_all": "All Coworkings",
+    "nav_meeting": "Meeting Rooms",
+    "nav_map": "Almaty Map",
+    "contacts": "Contacts",
+    "rights": "All rights reserved.",
+    "disclaimer": "All information about coworkings (prices, services, photos) presented on the platform is for informational purposes only and may be changed by space owners. Final conditions and actual pricing should be clarified directly with administrators when booking."
+  },
+  "Home": {
+    "hero_title_1": "Coworkings and meeting",
+    "hero_title_2": "rooms in Almaty",
+    "hero_subtitle": "Compare prices, choose the best spots on the map, and book in 1 click via WhatsApp.",
+    "seo_title_1": "Coworking Rental in Almaty: How to Choose the Best Workspace?",
+    "seo_p1": "Almaty is the center of business and IT activity in Kazakhstan. With the growth of freelance and remote work, the need for comfortable workspaces is increasing. On Kenzcore Space, we have gathered the best coworkings in Almaty so you can quickly find the perfect place to work.",
+    "seo_title_2": "Why is coworking better than working from home?",
+    "seo_li1": "Uninterrupted internet and power: Most top places are equipped with generators and UPS, which is critical for Almaty.",
+    "seo_li2": "Networking: Working surrounded by like-minded people from IT hubs helps you find partners.",
+    "seo_li3": "Meeting rooms: The ability to hold a client meeting in a presentable environment.",
+    "seo_p2": "Use our filters to search for coworkings by district, 24/7 access, or zoom booths. You can compare prices and contact the administrator directly via WhatsApp to book."
+  },
+  "Filters": {
+    "all_districts": "All districts",
+    "found": "Found:",
+    "grid": "Grid",
+    "map": "Map",
+    "empty": "Nothing was found for your request. Try changing the filters."
+  },
+  "Card": {
+    "amenities_more": "+{count} amenities",
+    "day_from": "Day from",
+    "meeting_from": "Meeting room from",
+    "currency": "₸",
+    "currency_hour": "₸/h",
+    "details": "Details",
+    "whatsapp": "WhatsApp",
+    "wa_message": "Hello! I found the coworking {name} on Kenzcore Space and would like to know..."
+  },
+  "Details": {
+    "verified": "Verified",
+    "title": "Coworking {name} in Almaty",
+    "about": "About the space",
+    "amenities": "Amenities",
+    "location": "Location",
+    "tariffs": "Tariffs",
+    "hot_desk": "Hot Desk / Day",
+    "hot_desk_desc": "Unassigned desk for a day",
+    "fix_desk": "Fix Desk / Month",
+    "fix_desk_desc": "Assigned desk (approximate)",
+    "meeting": "Meeting Room / Hour",
+    "meeting_desc": "Up to 6 people, whiteboard",
+    "wa_direct": "Direct communication with the admin.",
+    "wa_alert": "The specified prices are for informational purposes. The final cost and availability of free spaces are confirmed by the coworking itself.",
+    "open_2gis": "Open in 2GIS",
+    "open_google": "Route on Google Maps",
+    "wa_message": "Hello! I'm interested in the coworking {name}. Could you tell me if there are any available spaces for today and if the prices are up to date?"
+  }
+}
