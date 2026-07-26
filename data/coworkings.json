@@ -276,9 +276,9 @@
     "priceMeetingRoom": 4000,
     "whatsappNumber": "77775041481",
     "photos": [
-      "https://avatars.mds.yandex.net/i?id=0f201965f110231d1c133aa51ad834557b08ed06-16469138-images-thumbs&n=13",
-      "https://avatars.mds.yandex.net/i?id=57d24c04fd93cd265260cb82331a35a2ca2f8385-13618325-images-thumbs&n=13",
-      "https://avatars.mds.yandex.net/i?id=ec86d689c9a8503c7defbdacc05368575e84e66a-12422267-images-thumbs&n=13"
+      "/laptop1.jpg",
+      "/laptop2.jpg",
+      "/laptop3.jpg"
     ],
     "amenities": [
       {
@@ -456,9 +456,9 @@
     "priceMeetingRoom": 2500,
     "whatsappNumber": "77477273030",
     "photos": [
-      "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=800&q=80"
+      "/laptop1.jpg",
+      "/laptop2.jpg",
+      "/laptop3.jpg"
     ],
     "amenities": [
       {
