@@ -8,6 +8,7 @@ interface WhatsAppButtonProps {
   className?: string;
   fullWidth?: boolean;
   title?: string;
+  coworkingName?: string;
 }
 
 export default function WhatsAppButton({ 
@@ -15,15 +16,25 @@ export default function WhatsAppButton({
   message = "Здравствуйте! Я нашел ваш коворкинг на Kenzcore Space и хотел бы узнать...",
   className = "",
   fullWidth = false,
-  title = "WhatsApp"
+  title = "WhatsApp",
+  coworkingName
 }: WhatsAppButtonProps) {
   const url = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+
+  const handleClick = () => {
+    if (typeof window !== 'undefined' && (window as any).ym) {
+      (window as any).ym(111045873, 'reachGoal', 'whatsapp_click', {
+        coworkingName: coworkingName || 'Unknown'
+      });
+    }
+  };
 
   return (
     <a
       href={url}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={handleClick}
       className={`
         inline-flex items-center justify-center gap-2 
         bg-emerald-500 hover:bg-emerald-600 text-white 

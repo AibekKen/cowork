@@ -233,6 +233,7 @@ export default async function CoworkingPage({ params }: { params: Promise<{ loca
                   <WhatsAppButton 
                     number={coworking.whatsappNumber}
                     message={t('wa_message', { name: coworking.name })}
+                    coworkingName={coworking.name}
                     fullWidth
                   />
                   <p className="text-center text-xs text-gray-500 mt-4">
@@ -269,6 +270,7 @@ export default async function CoworkingPage({ params }: { params: Promise<{ loca
         <WhatsAppButton 
           number={coworking.whatsappNumber}
           message={t('wa_message', { name: coworking.name })}
+          coworkingName={coworking.name}
           fullWidth
           className="py-3.5 text-base shadow-emerald-500/25 shadow-lg"
         />
