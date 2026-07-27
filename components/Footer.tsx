@@ -41,16 +41,25 @@ export default function Footer() {
           <div className="flex flex-col items-center gap-4 w-full mt-2">
             <p className="text-sm">© {new Date().getFullYear()} Kenzcore Space. {t('rights')}</p>
             
-            {/* ZERO.kz */}
-            <span id="_zero_75625">
-              <noscript>
-                <a href="https://zero.kz/?s=75625" target="_blank" rel="noopener noreferrer">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://c.zero.kz/z.png?u=75625" width="88" height="31" alt="ZERO.kz" />
-                </a>
-              </noscript>
-            </span>
-            {/* End ZERO.kz */}
+            <div className="flex items-center gap-4">
+              {/* ZERO.kz */}
+              <span id="_zero_75625">
+                <noscript>
+                  <a href="https://zero.kz/?s=75625" target="_blank" rel="noopener noreferrer">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="https://c.zero.kz/z.png?u=75625" width="88" height="31" alt="ZERO.kz" />
+                  </a>
+                </noscript>
+              </span>
+              {/* End ZERO.kz */}
+
+              {/* LiveInternet */}
+              <a href="https://www.liveinternet.ru/click" target="_blank" rel="noopener noreferrer">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img id="licntA607" width="88" height="31" style={{border:0}} title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" alt=""/>
+              </a>
+              {/* End LiveInternet */}
+            </div>
           </div>
         </div>
       </div>
@@ -69,6 +78,17 @@ export default function Footer() {
               '//c.zero.kz/z.js';
             a.parentNode.insertBefore(s, a);
           })();
+        `
+      }} />
+
+      <Script id="liveinternet-counter" strategy="afterInteractive" dangerouslySetInnerHTML={{
+        __html: `
+          (function(d,s){d.getElementById("licntA607").src=
+          "https://counter.yadro.ru/hit?t14.6;r"+escape(d.referrer)+
+          ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+          (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+          ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+          (document,screen);
         `
       }} />
     </footer>
